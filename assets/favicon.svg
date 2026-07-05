@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="fav-brass" gradientUnits="userSpaceOnUse" x1="6" y1="4" x2="26" y2="28">
+      <stop offset="0" stop-color="#E9C46A"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <!-- Twilight ground so the mark reads on both light and dark browser chrome -->
+  <rect width="32" height="32" rx="7" fill="#33121A"/>
+  <g fill="none" stroke="url(#fav-brass)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+    <!-- simplified prabhavali arch -->
+    <path d="M8 26 C8 14.5 11.5 8.2 16 5.5 C20.5 8.2 24 14.5 24 26"/>
+    <!-- plinth -->
+    <path d="M6 26 H26"/>
+    <!-- split pillar stubs -->
+    <path d="M11.6 26 V16.5"/>
+    <path d="M20.4 26 V16.5"/>
+  </g>
+  <!-- jyoti flame, saffron tip -->
+  <path d="M16 11 C18.4 14.8 18.6 18.6 16 22.6 C13.4 18.6 13.6 14.8 16 11 Z" fill="#E8A13D"/>
+</svg>

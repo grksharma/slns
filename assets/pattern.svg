@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="presentation" aria-hidden="true">
+  <!--
+    Tileable lotus-chakra watermark. Drawn at full stroke strength in the
+    "stone" tone; the PAGE applies the 3-6% opacity (e.g.
+    background: url(assets/pattern.svg); opacity handled via a low-opacity
+    pseudo-element, or set opacity on the containing layer).
+    The corner medallions are quarters of the same center motif, so the
+    tile joins seamlessly when repeated.
+  -->
+  <defs>
+    <g id="pat-rosette" fill="none" stroke="#8A7A66" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+      <circle r="26"/>
+      <circle r="7"/>
+      <!-- 8 petals -->
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(45)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(90)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(135)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(180)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(225)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(270)"/>
+      <path d="M0 -22 C4 -16 4.4 -10 0 -4 C-4.4 -10 -4 -16 0 -22 Z" transform="rotate(315)"/>
+    </g>
+    <g id="pat-bud" fill="none" stroke="#8A7A66" stroke-width="1">
+      <circle r="4.6"/>
+      <circle r="1.6"/>
+    </g>
+  </defs>
+
+  <!-- center medallion -->
+  <use href="#pat-rosette" x="60" y="60"/>
+
+  <!-- corner quarter-medallions (complete across tile edges) -->
+  <use href="#pat-rosette" x="0" y="0"/>
+  <use href="#pat-rosette" x="120" y="0"/>
+  <use href="#pat-rosette" x="0" y="120"/>
+  <use href="#pat-rosette" x="120" y="120"/>
+
+  <!-- small buds on the diagonals -->
+  <use href="#pat-bud" x="30" y="30"/>
+  <use href="#pat-bud" x="90" y="30"/>
+  <use href="#pat-bud" x="30" y="90"/>
+  <use href="#pat-bud" x="90" y="90"/>
+
+  <!-- edge-midpoint dots (halved at edges; neighbours complete them) -->
+  <g fill="#8A7A66" stroke="none">
+    <circle cx="60" cy="0" r="1.6"/>
+    <circle cx="60" cy="120" r="1.6"/>
+    <circle cx="0" cy="60" r="1.6"/>
+    <circle cx="120" cy="60" r="1.6"/>
+  </g>
+</svg>

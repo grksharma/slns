@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- ========================================================================
+     festivals.html — Festivals & Utsavams (ఉత్సవాలు)
+     Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Uses ONLY classes from css/styles.css — no page-scoped <style> additions.
+     Festival set, masam/tithi mapping and the Brahmotsavam day-wise structure
+     follow the authentic defaults in research.json (modeled on Yadadri /
+     Mattapalli / Dharmapuri practice) — every such block carries an EDIT-ME
+     comment so the temple committee can adjust. Year-specific dates live ONLY
+     in js/main.js (ANNOUNCEMENTS + FESTIVALS arrays), never in this body copy.
+     ======================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Festivals &amp; Utsavams · Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
+  <meta name="description" content="Festivals at Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally — Sri Narasimha Jayanti, the annual Brahmotsavam and Jatara, Sri Rama Navami, Vaikuntha Ekadashi, Ugadi and Hanuman Jayanti, organised by Telugu masam. Dates follow the panchangam.">
+  <meta property="og:title" content="Festivals &amp; Utsavams · శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
+  <meta property="og:description" content="From Ugadi in Chaitra masam to the annual Brahmotsavam and Jatara — the festival year of the village temple. Exact dates follow the panchangam and are announced by the temple committee.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Telugu:wght@500;700&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ========================================================================
+     CANONICAL HEADER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the first thing inside <body>
+     on every page. The ONLY permitted change: add aria-current="page" to
+     the nav link of the page you are building (and nothing else).
+     Requires css/styles.css and js/main.js (the footer partial loads JS).
+     ======================================================================== -->
+
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+         temple's main contact number (keep the tel:+91 format, digits only, no spaces). -->
+    <a class="announce__call" href="tel:+91XXXXXXXXXX"><span class="placeholder">+91 XXXXX XXXXX</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" aria-current="page" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         HERO (short, inner-page variant)
+         ================================================================== -->
+    <section class="hero hero--short">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__kicker" lang="en">Bhairkhanpally · Keshampet Mandal · Ranga Reddy</span>
+        <h1>
+          <span class="hero__title-te" lang="te">ఉత్సవాలు</span>
+          <span class="hero__title-en" lang="en">Festivals &amp; Utsavams</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         01 · UTSAVAMS OF THE TEMPLE — intro + next-festival chip
+         ================================================================== -->
+    <section class="section" aria-labelledby="utsavams-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">01</span> · ఉత్సవాలు — Festivals of the Temple</span>
+          <h2 class="section__title" id="utsavams-title" data-en="Utsavams of the Temple" data-te="ఆలయ ఉత్సవాలు">Utsavams of the Temple</h2>
+          <span class="section__sub" lang="te">ఆలయ ఉత్సవాలు</span>
+        </div>
+
+        <div class="measure flow">
+          <p data-lang="en">At a Narasimha kshetram, every festival returns to a single moment —
+            the Lord bursting from the pillar at twilight, neither day nor night, to protect
+            Prahlada. Through the year the temple at Bhairkhanpally observes six principal
+            utsavams, from Ugadi in Chaitra masam to the annual Brahmotsavam and Jatara, when
+            the whole village walks with the Lord.</p>
+          <p data-lang="te" lang="te" hidden>నరసింహ క్షేత్రంలో ప్రతి ఉత్సవం ఒకే క్షణాన్ని
+            గుర్తుచేస్తుంది — ప్రహ్లాదుని రక్షించేందుకు, పగలు కాదు రాత్రి కాదు అనే సంధ్యా
+            సమయంలో, స్తంభం నుంచి స్వామివారు ఆవిర్భవించిన క్షణం. చైత్ర మాసంలో ఉగాది నుంచి
+            వార్షిక బ్రహ్మోత్సవం–జాతర వరకు, ఏడాది పొడవునా భైర్ఖాన్‌పల్లి ఆలయంలో ఆరు ప్రధాన
+            ఉత్సవాలు జరుగుతాయి.</p>
+
+          <p data-lang="en">Exact dates are fixed each year by the panchangam. Confirmed dates
+            are announced by the temple committee in the announcement strip at the top of
+            every page.</p>
+          <p data-lang="te" lang="te" hidden>ఖచ్చితమైన తేదీలు ప్రతి సంవత్సరం పంచాంగం ప్రకారం
+            నిర్ణయమవుతాయి. నిర్ధారించిన తేదీలను ఆలయ కమిటీ ప్రతి పేజీ పైన ఉన్న ప్రకటన పట్టీలో
+            తెలియజేస్తుంది.</p>
+
+          <!-- Next-festival chip: js/main.js fills this from the FESTIVALS array
+               (the committee fills ISO dates there each year from the panchangam);
+               it hides itself automatically when no upcoming date is set. -->
+          <p data-next-festival hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         02 · THE SIX PRINCIPAL FESTIVALS — card grid (cream festivals band)
+         ================================================================== -->
+    <section class="section section--cream" aria-labelledby="festivals-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">02</span> · పండుగలు — The Festival Year</span>
+          <h2 class="section__title" id="festivals-title" data-en="Six Principal Festivals" data-te="ఆరు ప్రధాన పండుగలు">Six Principal Festivals</h2>
+          <span class="section__sub" lang="te">ఆరు ప్రధాన పండుగలు</span>
+        </div>
+
+        <!-- EDIT-ME: This festival set and its masam/tithi framing follow the
+             authentic defaults in research.json (modeled on Yadadri, Mattapalli
+             and Dharmapuri practice). Confirm with the temple committee which
+             festivals this temple actually observes and how; add or remove
+             cards freely. Never print a year-specific date here — announce
+             each year's dates in js/main.js (ANNOUNCEMENTS + FESTIVALS). -->
+        <div class="card-grid">
+
+          <article class="card card--featured reveal">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Sri Narasimha Jayanti" data-te="శ్రీ నరసింహ జయంతి">Sri Narasimha Jayanti</h3>
+            <span class="card__sub" lang="te">శ్రీ నరసింహ జయంతి</span>
+            <p class="card__price"><span data-en="Vaishakha Shuddha Chaturdashi · April–May" data-te="వైశాఖ శుద్ధ చతుర్దశి · ఏప్రిల్–మే">Vaishakha Shuddha Chaturdashi · April–May</span></p>
+            <p class="card__desc" data-lang="en">The most important festival of the temple —
+              the day the Lord manifested from the pillar to save Prahlada. Special abhishekam
+              through the morning, Swamy Vari Kalyanotsavam in the evening (the hour of His
+              twilight appearance), and annadanam for all devotees.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>ఆలయంలో అత్యంత ప్రధానమైన
+              పండుగ — ప్రహ్లాదుని కోసం స్తంభం నుంచి స్వామివారు ఆవిర్భవించిన రోజు. ఉదయం
+              ప్రత్యేక అభిషేకం, సాయంత్రం (స్వామివారు ఆవిర్భవించిన సంధ్యా సమయంలో) స్వామివారి
+              కల్యాణోత్సవం, భక్తులందరికీ అన్నదానం.</p>
+            <p class="card__links">
+              <a href="sevas.html" data-en="Kalyanotsavam seva →" data-te="కల్యాణోత్సవం సేవ →">Kalyanotsavam seva →</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Annual Brahmotsavam &amp; Jatara" data-te="వార్షిక బ్రహ్మోత్సవం / జాతర">Annual Brahmotsavam &amp; Jatara</h3>
+            <span class="card__sub" lang="te">బ్రహ్మోత్సవం / జాతర</span>
+            <p class="card__price"><span data-en="By panchangam · usually February–April" data-te="పంచాంగం ప్రకారం · సాధారణంగా ఫిబ్రవరి–ఏప్రిల్">By panchangam · usually February–April</span></p>
+            <p class="card__desc" data-lang="en">The temple's multi-day annual utsavam —
+              Dhwajarohanam, daily vahana sevas, Swamy Vari Kalyanam, Rathotsavam around the
+              village and grama bhojanam. The village's own jatara.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>ధ్వజారోహణం, నిత్య వాహన
+              సేవలు, స్వామివారి కల్యాణం, ఊరి చుట్టూ రథోత్సవం, గ్రామ భోజనంతో పలు రోజుల పాటు
+              జరిగే వార్షిక ఉత్సవం — ఊరి సొంత జాతర.</p>
+            <p class="card__links">
+              <a href="#brahmotsavam" data-en="Day-wise structure →" data-te="రోజువారీ క్రమం →">Day-wise structure →</a>
+            </p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Sri Rama Navami" data-te="శ్రీరామనవమి">Sri Rama Navami</h3>
+            <span class="card__sub" lang="te">శ్రీరామనవమి</span>
+            <p class="card__price"><span data-en="Chaitra Shuddha Navami · March–April" data-te="చైత్ర శుద్ధ నవమి · మార్చి–ఏప్రిల్">Chaitra Shuddha Navami · March–April</span></p>
+            <p class="card__desc" data-lang="en">Sita Rama Kalyanam is performed in the temple
+              mandapam, with panakam and vadapappu distributed to all devotees as prasadam —
+              as in every Vaishnava temple of Telangana.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>ఆలయ మండపంలో శ్రీ సీతారాముల
+              కల్యాణం జరుగుతుంది; భక్తులందరికీ పానకం, వడపప్పు ప్రసాదంగా పంపిణీ చేస్తారు.</p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Vaikuntha Ekadashi" data-te="వైకుంఠ ఏకాదశి">Vaikuntha Ekadashi</h3>
+            <span class="card__sub" lang="te">వైకుంఠ ఏకాదశి (ముక్కోటి ఏకాదశి)</span>
+            <p class="card__price"><span data-en="Dhanurmasam Shuddha Ekadashi · December–January" data-te="ధనుర్మాస శుద్ధ ఏకాదశి · డిసెంబర్–జనవరి">Dhanurmasam Shuddha Ekadashi · December–January</span></p>
+            <p class="card__desc" data-lang="en">Devotees pass through the specially opened
+              northern entrance — Uttara Dwara Darshanam — believed to grant the merit of
+              entering Vaikuntham. Day-long bhajans and fasting.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>ప్రత్యేకంగా తెరిచే ఉత్తర
+              ద్వారం గుండా భక్తులు స్వామివారి దర్శనం చేసుకుంటారు — ఇది వైకుంఠ ప్రవేశ ఫలాన్ని
+              ఇస్తుందని విశ్వాసం. రోజంతా భజనలు, ఉపవాసం.</p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Ugadi" data-te="ఉగాది">Ugadi</h3>
+            <span class="card__sub" lang="te">ఉగాది</span>
+            <p class="card__price"><span data-en="Chaitra Shuddha Padyami · March–April" data-te="చైత్ర శుద్ధ పాడ్యమి · మార్చి–ఏప్రిల్">Chaitra Shuddha Padyami · March–April</span></p>
+            <p class="card__desc" data-lang="en">The Telugu New Year begins at the temple with
+              panchanga sravanam — the ceremonial reading of the new almanac — and Ugadi
+              pachadi distributed to all devotees.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>తెలుగు సంవత్సరాది. ఆలయంలో
+              పంచాంగ శ్రవణంతో కొత్త సంవత్సరం ప్రారంభమవుతుంది; భక్తులందరికీ ఉగాది పచ్చడి
+              పంపిణీ చేస్తారు.</p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Hanuman Jayanti" data-te="హనుమాన్ జయంతి">Hanuman Jayanti</h3>
+            <span class="card__sub" lang="te">హనుమాన్ జయంతి</span>
+            <p class="card__price"><span data-en="Vaishakha Bahula Dashami · May" data-te="వైశాఖ బహుళ దశమి · మే">Vaishakha Bahula Dashami · May</span></p>
+            <p class="card__desc" data-lang="en">Observed in the Telangana tradition on
+              Vaishakha Bahula Dashami, concluding the 41-day Hanuman Deeksha that begins on
+              Chaitra Purnima — special pooja to Anjaneya Swamy, Sundarakanda parayanam and
+              annadanam.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>తెలంగాణ సంప్రదాయం ప్రకారం
+              వైశాఖ బహుళ దశమి నాడు జరుపుకుంటారు — చైత్ర పూర్ణిమతో ప్రారంభమయ్యే 41 రోజుల
+              హనుమాన్ దీక్షకు ముగింపు రోజు. ఆంజనేయ స్వామికి ప్రత్యేక పూజ, సుందరకాండ
+              పారాయణం, అన్నదానం.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         03 · ANNUAL BRAHMOTSAVAM & JATARA — feature section
+         ================================================================== -->
+    <section class="section" id="brahmotsavam" aria-labelledby="brahmotsavam-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">03</span> · బ్రహ్మోత్సవం / జాతర — The Annual Brahmotsavam</span>
+          <h2 class="section__title" id="brahmotsavam-title" data-en="The Annual Brahmotsavam &amp; Jatara" data-te="వార్షిక బ్రహ్మోత్సవం / జాతర">The Annual Brahmotsavam &amp; Jatara</h2>
+          <span class="section__sub" lang="te">వార్షిక బ్రహ్మోత్సవం / జాతర</span>
+        </div>
+
+        <div class="measure flow">
+          <p data-lang="en">Once a year the whole village turns toward the temple. For several
+            days the utsava murti of Sri Lakshmi Narasimha Swamy comes out of the sanctum and
+            moves among His people — on vahanas through the streets, in Kalyanam in the
+            mandapam, and on the ratham around the village — on the pattern of the famous
+            Dharmapuri and Yadadri Brahmotsavams. Part utsavam, part fair, the jatara is the
+            village's own festival.</p>
+          <p data-lang="te" lang="te" hidden>సంవత్సరానికి ఒకసారి ఊరంతా ఆలయం వైపు తిరుగుతుంది.
+            కొన్ని రోజుల పాటు శ్రీ లక్ష్మీ నరసింహ స్వామివారి ఉత్సవ మూర్తి గర్భగుడి నుంచి
+            బయటకు వేంచేసి — వీధుల్లో వాహన సేవలపై, మండపంలో కల్యాణంలో, ఊరి చుట్టూ రథోత్సవంలో —
+            భక్తుల మధ్యకు వస్తారు. ప్రసిద్ధ ధర్మపురి, యాదాద్రి బ్రహ్మోత్సవాల సంప్రదాయంలో
+            జరిగే ఈ జాతర ఊరి సొంత పండుగ.</p>
+
+          <p data-lang="en">A Brahmotsavam typically unfolds in this order:</p>
+          <p data-lang="te" lang="te" hidden>బ్రహ్మోత్సవం సాధారణంగా ఈ క్రమంలో జరుగుతుంది:</p>
+
+          <!-- EDIT-ME: This is the TYPICAL day-wise structure of a Lakshmi Narasimha
+               Brahmotsavam/Jatara (modeled on Dharmapuri and Yadadri practice — see
+               research.json). Replace it with THIS temple's actual programme: the
+               number of days, the day-order, and the vahana list, once the committee
+               confirms them. Announce each year's dates only in js/main.js
+               (ANNOUNCEMENTS + FESTIVALS arrays), never in this body copy. -->
+          <ul class="diya-list">
+            <li data-lang="en"><strong>Dhwajarohanam — the utsavam begins.</strong> The temple
+              flag rises on the dhwaja sthambham, inviting the devas to the celebrations.</li>
+            <li data-lang="te" lang="te" hidden><strong>ధ్వజారోహణం — ఉత్సవ ప్రారంభం.</strong>
+              ఆలయ ధ్వజస్తంభంపై ధ్వజాన్ని ఎగురవేసి దేవతలను ఉత్సవాలకు ఆహ్వానిస్తారు.</li>
+
+            <li data-lang="en"><strong>Daily vahana sevas.</strong> Each morning and evening
+              the utsava murti is taken in procession through the village streets on a
+              different vahana.</li>
+            <li data-lang="te" lang="te" hidden><strong>నిత్య వాహన సేవలు.</strong> ప్రతి
+              ఉదయం, సాయంత్రం స్వామివారి ఉత్సవ మూర్తిని వేర్వేరు వాహనాలపై గ్రామ వీధుల్లో
+              ఊరేగిస్తారు.</li>
+
+            <li data-lang="en"><strong>Swamy Vari Kalyanam.</strong> The celestial wedding of
+              Sri Lakshmi Devi with Narasimha Swamy in the temple mandapam — the most
+              auspicious day of the utsavam.</li>
+            <li data-lang="te" lang="te" hidden><strong>స్వామివారి కల్యాణం.</strong> ఆలయ
+              మండపంలో శ్రీ లక్ష్మీ దేవితో నరసింహ స్వామివారి కల్యాణం — ఉత్సవాల్లో అత్యంత
+              శుభప్రదమైన రోజు.</li>
+
+            <li data-lang="en"><strong>Rathotsavam.</strong> The Lord rides the ratham
+              (chariot) around the village — the jatara's grandest procession, with the whole
+              village walking alongside.</li>
+            <li data-lang="te" lang="te" hidden><strong>రథోత్సవం.</strong> స్వామివారు రథంపై
+              ఊరి చుట్టూ ఊరేగింపుగా వేంచేస్తారు — ఊరంతా వెంట నడిచే జాతర మహా ఘట్టం.</li>
+
+            <li data-lang="en"><strong>Grama bhojanam &amp; annadanam.</strong> The utsavam
+              closes with the whole village sharing prasadam together, and the flag is lowered
+              (Dhwajavarohanam).</li>
+            <li data-lang="te" lang="te" hidden><strong>గ్రామ భోజనం, అన్నదానం.</strong>
+              ఊరందరూ కలిసి ప్రసాద భోజనం చేయడంతో ఉత్సవాలు ముగుస్తాయి; ధ్వజావరోహణంతో ధ్వజం
+              దించబడుతుంది.</li>
+          </ul>
+
+          <!-- EDIT-ME: When the committee fixes each year's Brahmotsavam/Jatara dates
+               from the panchangam, put them in js/main.js (ANNOUNCEMENTS + FESTIVALS)
+               so they appear in the announcement strip and the next-festival chip.
+               This visible placeholder line stays as-is until then. -->
+          <p data-lang="en">This year's jatara dates:
+            <span class="placeholder">announced by the temple committee after panchangam consultation</span></p>
+          <p data-lang="te" lang="te" hidden>ఈ సంవత్సరం జాతర తేదీలు:
+            <span class="placeholder">పంచాంగం చూసిన తర్వాత ఆలయ కమిటీ ప్రకటిస్తుంది</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ==================================================================
+         04 · THE FESTIVAL YEAR AT A GLANCE — masam-wise slab
+         ================================================================== -->
+    <section class="section" aria-labelledby="yearglance-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">04</span> · సంవత్సర ఉత్సవ పట్టిక — Year at a Glance</span>
+          <h2 class="section__title" id="yearglance-title" data-en="The Festival Year at a Glance" data-te="సంవత్సర ఉత్సవ పట్టిక">The Festival Year at a Glance</h2>
+          <span class="section__sub" lang="te">సంవత్సర ఉత్సవ పట్టిక</span>
+        </div>
+
+        <!-- EDIT-ME: Masam/tithi mapping follows the festival defaults in
+             research.json (the Brahmotsavam window follows the common
+             Phalguna–Chaitra jatara pattern of Telangana villages). Confirm
+             each row with the temple committee; edit rows freely. -->
+        <div class="slab reveal">
+          <div class="slab__head">
+            <img class="slab__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+            <span class="slab__title-te" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="slab__title-en" lang="en">Sri Lakshmi Narasimha Swamy Temple</span>
+            <span class="slab__place" lang="en">Bhairkhanpally · 509408</span>
+          </div>
+
+          <p class="slab__label">
+            <img src="assets/diya.svg" alt="" width="14" height="14">
+            <span data-en="Chaitra Masam · March–April" data-te="చైత్ర మాసం · మార్చి–ఏప్రిల్">Chaitra Masam · March–April</span>
+          </p>
+          <table class="slab-table">
+            <tbody>
+              <tr>
+                <th scope="row">Ugadi <span class="te" lang="te">ఉగాది</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="Shuddha Padyami" data-te="శుద్ధ పాడ్యమి">Shuddha Padyami</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Sri Rama Navami <span class="te" lang="te">శ్రీరామనవమి</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="Shuddha Navami" data-te="శుద్ధ నవమి">Shuddha Navami</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="slab__label">
+            <img src="assets/diya.svg" alt="" width="14" height="14">
+            <span data-en="Vaishakha Masam · April–May" data-te="వైశాఖ మాసం · ఏప్రిల్–మే">Vaishakha Masam · April–May</span>
+          </p>
+          <table class="slab-table">
+            <tbody>
+              <tr>
+                <th scope="row">Sri Narasimha Jayanti <span class="te" lang="te">శ్రీ నరసింహ జయంతి</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="Shuddha Chaturdashi" data-te="శుద్ధ చతుర్దశి">Shuddha Chaturdashi</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Hanuman Jayanti <span class="te" lang="te">హనుమాన్ జయంతి</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="Bahula Dashami" data-te="బహుళ దశమి">Bahula Dashami</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="slab__label">
+            <img src="assets/diya.svg" alt="" width="14" height="14">
+            <span data-en="Dhanurmasam · December–January" data-te="ధనుర్మాసం · డిసెంబర్–జనవరి">Dhanurmasam · December–January</span>
+          </p>
+          <table class="slab-table">
+            <tbody>
+              <tr>
+                <th scope="row">Vaikuntha Ekadashi <span class="te" lang="te">వైకుంఠ ఏకాదశి</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="Shuddha Ekadashi" data-te="శుద్ధ ఏకాదశి">Shuddha Ekadashi</span></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="slab__label">
+            <img src="assets/diya.svg" alt="" width="14" height="14">
+            <span data-en="Phalguna–Chaitra · February–April" data-te="ఫాల్గుణ–చైత్రం · ఫిబ్రవరి–ఏప్రిల్">Phalguna–Chaitra · February–April</span>
+          </p>
+          <table class="slab-table">
+            <tbody>
+              <tr>
+                <th scope="row">Brahmotsavam / Jatara <span class="te" lang="te">బ్రహ్మోత్సవం / జాతర</span></th>
+                <td class="slab-table__leader" aria-hidden="true"></td>
+                <td class="slab-table__time"><span data-en="By panchangam" data-te="పంచాంగం ప్రకారం">By panchangam</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- EDIT-ME: Yearly festival dates belong ONLY in js/main.js — the
+             ANNOUNCEMENTS array (renders into [data-announcements] in the
+             header strip) and the FESTIVALS array (fills the [data-next-festival]
+             chip near the top of this page). Never add year-specific dates to
+             this page's body copy. -->
+        <div class="measure-center center flow">
+          <p class="small muted" data-lang="en">Exact dates change every year with the
+            panchangam. The temple committee announces confirmed dates in the announcement
+            strip at the top of every page — no festival date is final until announced
+            there.</p>
+          <p class="small muted" data-lang="te" lang="te" hidden>ఖచ్చితమైన తేదీలు ప్రతి
+            సంవత్సరం పంచాంగాన్ని బట్టి మారుతాయి. నిర్ధారించిన తేదీలను ఆలయ కమిటీ ప్రతి పేజీ
+            పైన ఉన్న ప్రకటన పట్టీలో తెలియజేస్తుంది — అక్కడ ప్రకటించే వరకు ఏ పండుగ తేదీ
+            ఖరారు కాదు.</p>
+
+          <p>
+            <a class="btn btn--ghost" href="visit.html" data-en="Plan Your Visit · దర్శనం" data-te="దర్శనం · Plan Your Visit">Plan Your Visit · దర్శనం</a>
+          </p>
+          <p class="small">
+            <a href="timings.html" data-en="Daily darshan timings →" data-te="నిత్య దర్శన వేళలు →">Daily darshan timings →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- ========================================================================
+     CANONICAL FOOTER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the last thing inside <body>
+     on every page (after </main>). Do not restyle or restructure it.
+     It ends with the shared <script src="js/main.js" defer> tag — include
+     that script ONCE per page; copying this footer already does it.
+     ======================================================================== -->
+
+<!-- Village skyline over the ember horizon: the footer's top edge -->
+<svg class="footer-skyline" viewBox="0 0 1600 110" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <g fill="#241014">
+    <!-- compound walls with lotus-bud coping -->
+    <path d="M0 92 H93 q5 -7 10 0 H293 q5 -7 10 0 H493 q5 -7 10 0 H693 q5 -7 10 0 H744 V110 H0 Z"/>
+    <path d="M856 92 H907 q5 -7 10 0 H1107 q5 -7 10 0 H1307 q5 -7 10 0 H1507 q5 -7 10 0 H1600 V110 H856 Z"/>
+    <!-- miniature stepped gopuram -->
+    <path d="M756 110 L763 72 L775 72 L781 48 L791 48 L795 30 C796 21 798 18 800 18 C802 18 804 21 805 30 L809 48 L819 48 L825 72 L837 72 L844 110 Z"/>
+    <!-- neem trees -->
+    <rect x="297" y="84" width="6" height="26"/>
+    <circle cx="300" cy="72" r="20"/>
+    <circle cx="285" cy="80" r="14"/>
+    <circle cx="316" cy="79" r="15"/>
+    <rect x="517" y="92" width="5" height="18"/>
+    <circle cx="520" cy="82" r="14"/>
+    <circle cx="509" cy="88" r="10"/>
+    <circle cx="532" cy="87" r="11"/>
+    <rect x="1237" y="84" width="6" height="26"/>
+    <circle cx="1240" cy="72" r="19"/>
+    <circle cx="1226" cy="80" r="13"/>
+    <circle cx="1255" cy="79" r="14"/>
+    <!-- village house -->
+    <path d="M1025 88 L1052 74 L1080 88 V110 H1025 Z"/>
+  </g>
+  <!-- gold kalasham tip on the gopuram -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round">
+    <path d="M800 16 V12"/>
+    <circle cx="800" cy="9" r="2.2"/>
+  </g>
+  <!-- the 1px ember horizon line -->
+  <rect x="0" y="108.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+</svg>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1 · seal + about + address -->
+      <div class="footer-col">
+        <p class="footer-seal">
+          <img src="assets/emblem.svg" alt="" width="38" height="38">
+          <span>
+            <span class="footer-seal__te" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="footer-seal__en" lang="en">Bhairkhanpally Grama Devalayam</span>
+          </span>
+        </p>
+        <!-- EDIT-ME: Confirm the Telugu spelling of the village name (భైర్ఖాన్‌పల్లి)
+             with the temple committee before publishing. -->
+        <p class="footer-about" data-lang="en">The village temple (grama devalayam) of Bhairkhanpally,
+          where Sri Lakshmi Narasimha Swamy — the Lord in His peaceful form with Sri Lakshmi Devi —
+          is worshipped. Bhairkhanpally lies in Keshampet mandal, Ranga Reddy district, Telangana.</p>
+        <p class="footer-about" data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి గ్రామ దేవాలయం —
+          శ్రీ లక్ష్మీ దేవి సమేతంగా శాంత స్వరూపుడైన శ్రీ లక్ష్మీ నరసింహ స్వామివారు ఇక్కడ కొలువై ఉన్నారు.
+          భైర్ఖాన్‌పల్లి కేశంపేట మండలం, రంగారెడ్డి జిల్లా, తెలంగాణలో ఉంది.</p>
+        <address class="footer-address">
+          <span data-en="Sri Lakshmi Narasimha Swamy Temple" data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Lakshmi Narasimha Swamy Temple</span><br>
+          <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="భైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+          <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+        </address>
+      </div>
+
+      <!-- Column 2 · quick links -->
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-col__title" data-en="Quick Links" data-te="త్వరిత లింకులు">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+          <li><a href="about.html" data-en="About the Temple" data-te="ఆలయ చరిత్ర">About the Temple</a></li>
+          <li><a href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a></li>
+          <li><a href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a></li>
+          <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+          <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+          <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+          <li><a href="visit.html" data-en="Plan Your Visit" data-te="దర్శనం">Plan Your Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column 3 · darshan hours summary -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Darshan Hours" data-te="దర్శన వేళలు">Darshan Hours</h2>
+        <!-- EDIT-ME: These hours follow the daily schedule used across the site
+             (modeled on Yadadri/Mattapalli practice). Adjust once the committee
+             confirms this temple's actual timings — and keep timings.html in sync. -->
+        <ul class="footer-hours">
+          <li><span data-en="Morning:" data-te="ఉదయం:">Morning:</span> <span class="tnum">6:00 AM – 12:00 noon</span></li>
+          <li><span data-en="Evening:" data-te="సాయంత్రం:">Evening:</span> <span class="tnum">5:00 PM – 8:00 PM</span></li>
+        </ul>
+        <p><a href="timings.html" data-en="Full ritual schedule →" data-te="పూర్తి పూజా క్రమం →">Full ritual schedule →</a></p>
+      </div>
+
+      <!-- Column 4 · contact -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Contact" data-te="సంప్రదించండి">Contact</h2>
+        <ul class="footer-phones">
+          <!-- EDIT-ME: Replace +91XXXXXXXXXX in each href AND each visible number
+               with real numbers (href format: tel:+91 then 10 digits, no spaces). -->
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple priest:" data-te="అర్చకులు:">Temple priest:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple committee:" data-te="ఆలయ కమిటీ:">Temple committee:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <!-- EDIT-ME: Replace 91XXXXXXXXXX with the WhatsApp number (country code 91
+               + 10 digits, no plus sign, no spaces). The message text is pre-filled. -->
+          <li>
+            <a class="footer-phone" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span class="footer-phone__label" data-en="WhatsApp:" data-te="వాట్సాప్:">WhatsApp:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sri Narasimha Gayatri — the footer's sloka (one placement, per spec) -->
+    <div class="footer-sloka">
+      <p class="footer-sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>तन्नो नारसिंहः प्रचोदयात् ॥</p>
+      <span class="footer-sloka__tr" lang="en">May we know the Lord of adamantine nails; may we meditate on Him of sharp fangs.
+        May that Lord Narasimha illumine our intellect.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span>
+        <span data-en="Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved."
+              data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయ కమిటీ, భైర్ఖాన్‌పల్లి (గ్రామ దేవాలయం). సర్వ హక్కులు కమిటీవే.">Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved.</span></p>
+      <p class="small"
+         data-en="Seva, timing and festival details on this site are maintained by the temple committee."
+         data-te="ఈ సైట్‌లోని సేవలు, దర్శన వేళలు, ఉత్సవ వివరాలు ఆలయ కమిటీ నిర్వహణలో ఉంటాయి.">Seva, timing and festival details on this site are maintained by the temple committee.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared script — one per page, last thing before </body>. -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Lotus">
+  <defs>
+    <linearGradient id="lotus-brass" gradientUnits="userSpaceOnUse" x1="4" y1="5" x2="28" y2="26">
+      <stop offset="0" stop-color="#E9C46A"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#lotus-brass)" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round">
+    <!-- central petal -->
+    <path d="M16 5.5 C19 9.5 19.4 13.9 16 18.2 C12.6 13.9 13 9.5 16 5.5 Z"/>
+    <!-- inner side petals -->
+    <path d="M15.7 17.9 C11.8 16.7 9.4 13.3 9 8.9 C12.6 10.1 15 13.3 15.7 17.9"/>
+    <path d="M16.3 17.9 C20.2 16.7 22.6 13.3 23 8.9 C19.4 10.1 17 13.3 16.3 17.9"/>
+    <!-- outer side petals -->
+    <path d="M15.5 18.5 C10.6 18.7 6.5 16.5 4.1 12.7 C8.5 12.3 12.8 14.5 15.5 18.5"/>
+    <path d="M16.5 18.5 C21.4 18.7 25.5 16.5 27.9 12.7 C23.5 12.3 19.2 14.5 16.5 18.5"/>
+    <!-- base bowl of petals -->
+    <path d="M6.2 20.2 C9.2 24.1 12.5 25.7 16 25.7 C19.5 25.7 22.8 24.1 25.8 20.2"/>
+    <!-- base curls -->
+    <path d="M4.6 17.8 C5.6 19.3 7 20.4 8.8 21" stroke-width="1"/>
+    <path d="M27.4 17.8 C26.4 19.3 25 20.4 23.2 21" stroke-width="1"/>
+  </g>
+</svg>

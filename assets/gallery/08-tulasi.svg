@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="g08">
+  <title id="g08">Illustration of a tulasi plant in its brindavanam, sacred to Sri Maha Vishnu</title>
+  <defs>
+    <linearGradient id="sky08" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#241014"/><stop offset=".6" stop-color="#3d151c"/><stop offset="1" stop-color="#6B1F24"/>
+    </linearGradient>
+    <linearGradient id="brass08" x1="300" y1="120" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C46A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow08" cx="400" cy="280" r="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A13D" stop-opacity=".28"/><stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky08)"/>
+  <rect width="800" height="600" fill="url(#glow08)"/>
+  <g fill="none" stroke="url(#brass08)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- plant stems -->
+    <path d="M400 380 V210"/>
+    <path d="M400 300 q-40 -14 -58 -46 M400 300 q40 -14 58 -46"/>
+    <path d="M400 260 q-32 -12 -44 -40 M400 260 q32 -12 44 -40"/>
+    <path d="M400 340 q-34 -10 -50 -34 M400 340 q34 -10 50 -34"/>
+    <!-- leaf clusters -->
+    <g stroke-width="1.2">
+      <path d="M400 210 q-12 -18 0 -36 q12 18 0 36"/>
+      <path d="M342 164 q-20 -6 -26 -26 q20 4 26 26"/><path d="M458 164 q20 -6 26 -26 q-20 4 -26 26"/>
+      <path d="M356 220 q-22 -4 -30 -22 q22 2 30 22"/><path d="M444 220 q22 -4 30 -22 q-22 2 -30 22"/>
+      <path d="M350 306 q-22 -4 -30 -22 q22 2 30 22"/><path d="M450 306 q22 -4 30 -22 q-22 2 -30 22"/>
+      <path d="M372 186 q-8 -16 2 -30 M428 186 q8 -16 -2 -30"/>
+    </g>
+    <!-- brindavanam pot (stepped square planter) -->
+    <path d="M348 380 h104 v70 h-104 Z"/>
+    <path d="M336 450 h128 v18 h-128 Z"/>
+    <path d="M328 468 h144 v22 h-144 Z"/>
+    <path d="M320 490 h160 v20 h-160 Z"/>
+    <!-- niche with a small lamp on the planter face -->
+    <path d="M384 402 h32 v30 h-32 Z" stroke-width="1.1" opacity=".85"/>
+    <path d="M366 416 h12 M422 416 h12" stroke-width="1" opacity=".7"/>
+  </g>
+  <!-- lamp flame in the niche (saffron) -->
+  <path d="M400 412 q7 8 0 18 q-7 -10 0 -18 Z" fill="#E8A13D"/>
+  <!-- frame -->
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="url(#brass08)" stroke-width="2"/>
+  <rect x="27" y="27" width="746" height="546" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</svg>

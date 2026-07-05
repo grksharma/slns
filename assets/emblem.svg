@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="emblem-title">
+  <title id="emblem-title">Sri Lakshmi Narasimha Swamy Temple emblem — a split pillar with the sacred flame within a prabhavali arch</title>
+  <defs>
+    <linearGradient id="emblem-brass" gradientUnits="userSpaceOnUse" x1="10" y1="2" x2="54" y2="60">
+      <stop offset="0" stop-color="#E9C46A"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+  <style>
+    @media (prefers-reduced-motion: no-preference) {
+      .jyoti {
+        animation: emblem-jyoti 3s ease-in-out infinite;
+        transform-origin: 32px 44px;
+      }
+      @keyframes emblem-jyoti {
+        0%, 100% { opacity: 1; transform: scale(1); }
+        50%      { opacity: .72; transform: scale(.97); }
+      }
+    }
+  </style>
+
+  <!-- Prabhavali arch: fine double stroke with flame ticks and kalasham finial -->
+  <g fill="none" stroke="url(#emblem-brass)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- outer arch -->
+    <path d="M13 55 C13 30 20 14 32 7 C44 14 51 30 51 55"/>
+    <!-- inner arch -->
+    <path d="M16.5 55 C16.5 31.5 23 16.5 32 10.5 C41 16.5 47.5 31.5 47.5 55" stroke-width="1" opacity=".8"/>
+    <!-- flame ticks along the outer arch -->
+    <path d="M14.8 39 q-3.4 -.8 -4.2 -3.9" stroke-width="1.1"/>
+    <path d="M18 26.5 q-3.1 -1.3 -3.4 -4.5" stroke-width="1.1"/>
+    <path d="M24 16 q-2.5 -2 -2.3 -5.1" stroke-width="1.1"/>
+    <path d="M49.2 39 q3.4 -.8 4.2 -3.9" stroke-width="1.1"/>
+    <path d="M46 26.5 q3.1 -1.3 3.4 -4.5" stroke-width="1.1"/>
+    <path d="M40 16 q2.5 -2 2.3 -5.1" stroke-width="1.1"/>
+    <!-- kalasham finial at the apex -->
+    <path d="M29.9 4.9 h4.2" stroke-width="1.1"/>
+    <path d="M30.2 4.9 c0 1.7 .8 2.5 1.8 2.5 c1 0 1.8 -.8 1.8 -2.5" stroke-width="1.1"/>
+    <circle cx="32" cy="2.9" r="1.2" stroke-width="1.1"/>
+  </g>
+
+  <!-- Split pillar (Prahlada's pillar), cleft down the middle -->
+  <g fill="none" stroke="url(#emblem-brass)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <!-- capitals -->
+    <path d="M21 26.5 h8.5"/>
+    <path d="M34.5 26.5 h8.5"/>
+    <!-- left shaft -->
+    <path d="M22.5 55 V29 h5.5 V55"/>
+    <!-- right shaft -->
+    <path d="M41.5 55 V29 h-5.5 V55"/>
+    <!-- crack nicks on the inner edges of the fissure -->
+    <path d="M28 34 l1.1 2.2 l-1.1 2.2" stroke-width="1"/>
+    <path d="M36 42 l-1.1 2.2 l1.1 2.2" stroke-width="1"/>
+    <!-- stepped plinth -->
+    <path d="M10 55 H54"/>
+    <path d="M14 59 H50" stroke-width="1.1"/>
+  </g>
+
+  <!-- The jyoti: flame emerging from the fissure (the only fills: saffron tip) -->
+  <g class="jyoti">
+    <path d="M32 24 C35.6 31 36 38.5 32 46.5 C28 38.5 28.4 31 32 24 Z"
+          fill="none" stroke="url(#emblem-brass)" stroke-width="1.25" stroke-linejoin="round"/>
+    <path d="M32 30 C34.3 34.5 34.4 39 32 43.5 C29.6 39 29.7 34.5 32 30 Z"
+          fill="#E8A13D"/>
+  </g>
+</svg>

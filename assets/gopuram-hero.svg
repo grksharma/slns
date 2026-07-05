@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">Bhairkhanpally at dusk</title>
+  <desc id="hero-desc">A Telangana-style stepped temple gopuram rises in silhouette against a twilight sky over the village, its kalasham finial catching the last gold light.</desc>
+  <defs>
+    <linearGradient id="hero-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#33121A"/>
+      <stop offset=".62" stop-color="#6B1F24"/>
+      <stop offset="1" stop-color="#B85C24"/>
+    </linearGradient>
+    <radialGradient id="hero-glow" cx=".5" cy=".5" r=".5">
+      <stop offset="0" stop-color="#B85C24" stop-opacity=".30"/>
+      <stop offset=".65" stop-color="#B85C24" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="hero-gate" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6B1F24"/>
+      <stop offset="1" stop-color="#B85C24"/>
+    </linearGradient>
+    <linearGradient id="hero-brass" gradientUnits="userSpaceOnUse" x1="786" y1="272" x2="818" y2="312">
+      <stop offset="0" stop-color="#E9C46A"/>
+      <stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+  </defs>
+
+  <!-- LAYER 1 · twilight sky -->
+  <rect width="1600" height="900" fill="url(#hero-sky)"/>
+
+  <!-- one-pixel stars, upper third only -->
+  <g fill="#E3C363">
+    <circle cx="110" cy="80" r="1.3" opacity=".08"/>
+    <circle cx="240" cy="150" r="1" opacity=".06"/>
+    <circle cx="330" cy="60" r="1.5" opacity=".10"/>
+    <circle cx="430" cy="190" r="1.1" opacity=".07"/>
+    <circle cx="520" cy="110" r="1.3" opacity=".08"/>
+    <circle cx="640" cy="70" r="1" opacity=".06"/>
+    <circle cx="700" cy="210" r="1.4" opacity=".09"/>
+    <circle cx="820" cy="50" r="1.1" opacity=".07"/>
+    <circle cx="900" cy="140" r="1.3" opacity=".08"/>
+    <circle cx="1000" cy="90" r="1" opacity=".06"/>
+    <circle cx="1090" cy="180" r="1.5" opacity=".10"/>
+    <circle cx="1180" cy="60" r="1.1" opacity=".07"/>
+    <circle cx="1270" cy="130" r="1.3" opacity=".08"/>
+    <circle cx="1350" cy="220" r="1" opacity=".06"/>
+    <circle cx="1430" cy="90" r="1.4" opacity=".09"/>
+    <circle cx="1500" cy="170" r="1.1" opacity=".07"/>
+    <circle cx="1550" cy="40" r="1" opacity=".06"/>
+    <circle cx="60" cy="230" r="1.1" opacity=".07"/>
+    <circle cx="760" cy="260" r="1" opacity=".06"/>
+    <circle cx="1330" cy="30" r="1.3" opacity=".08"/>
+  </g>
+
+  <!-- lamp glow rising from the horizon -->
+  <ellipse cx="800" cy="880" rx="950" ry="400" fill="url(#hero-glow)"/>
+
+  <!-- LAYER 2a · far village treeline (twilight plum) -->
+  <path fill="#33121A" d="M0 800 V784 C50 780 90 788 140 786 C200 783 240 774 300 779
+    C360 784 410 776 470 780 C530 784 570 774 630 779 C690 784 720 780 760 782
+    L840 782 C890 779 930 785 990 781 C1050 777 1090 786 1150 783 C1210 780 1250 771 1310 776
+    C1330 762 1342 758 1352 758 C1362 758 1374 762 1394 776 C1440 780 1480 774 1530 779
+    C1560 782 1580 780 1600 782 V800 Z"/>
+
+  <!-- ember horizon line (the only place the ember tone appears outside the sky) -->
+  <rect x="0" y="798.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+
+  <!-- LAYER 2b · near silhouettes (night maroon) -->
+  <g fill="#241014">
+    <!-- foreground ground -->
+    <rect x="0" y="800" width="1600" height="100"/>
+
+    <!-- compound wall, left — lotus-bud coping bumps -->
+    <path d="M0 758 H49 q6 -9 12 0 H159 q6 -9 12 0 H269 q6 -9 12 0 H379 q6 -9 12 0 H489 q6 -9 12 0 H618 V812 H0 Z"/>
+    <!-- compound wall, right -->
+    <path d="M982 758 H1031 q6 -9 12 0 H1141 q6 -9 12 0 H1251 q6 -9 12 0 H1361 q6 -9 12 0 H1471 q6 -9 12 0 H1600 V812 H982 Z"/>
+
+    <!-- central Kakatiya-style stepped gopuram -->
+    <path d="M640 800 L655 644 L675 644 L689 566 L701 566 L714 494 L726 494 L738 428
+      L749 428 L759 372 L776 372 L776 338 L770 338 C772 322 786 312 800 312
+      C814 312 828 322 830 338 L824 338 L824 372 L841 372 L851 428 L862 428
+      L874 494 L886 494 L899 566 L911 566 L925 644 L945 644 L960 800 Z"/>
+    <!-- corner pinnacles on the tier ledges -->
+    <path d="M658 644 v-13 q6.5 -7 13 0 v13 Z"/>
+    <path d="M931 644 v-13 q6.5 -7 13 0 v13 Z"/>
+    <path d="M691 566 v-11 q5.5 -6 11 0 v11 Z"/>
+    <path d="M898 566 v-11 q5.5 -6 11 0 v11 Z"/>
+    <path d="M716 494 v-9 q4.5 -5 9 0 v9 Z"/>
+    <path d="M875 494 v-9 q4.5 -5 9 0 v9 Z"/>
+
+    <!-- neem trees flanking the village -->
+    <rect x="186" y="700" width="8" height="100"/>
+    <circle cx="190" cy="668" r="46"/>
+    <circle cx="158" cy="690" r="34"/>
+    <circle cx="224" cy="688" r="36"/>
+    <rect x="391" y="716" width="8" height="84"/>
+    <circle cx="395" cy="690" r="38"/>
+    <circle cx="367" cy="706" r="28"/>
+    <circle cx="424" cy="704" r="30"/>
+    <rect x="1206" y="706" width="8" height="94"/>
+    <circle cx="1210" cy="676" r="44"/>
+    <circle cx="1178" cy="696" r="32"/>
+    <circle cx="1243" cy="694" r="34"/>
+    <rect x="1446" y="722" width="8" height="78"/>
+    <circle cx="1450" cy="698" r="36"/>
+    <circle cx="1424" cy="712" r="27"/>
+    <circle cx="1477" cy="710" r="28"/>
+
+    <!-- village houses -->
+    <path d="M475 762 L512 738 L550 762 V800 H475 Z"/>
+    <path d="M1500 768 L1532 748 L1564 768 V800 H1500 Z"/>
+
+    <!-- small shrine mandapam with dome -->
+    <rect x="1063" y="736" width="64" height="64"/>
+    <path d="M1055 736 H1135 L1127 720 H1063 Z"/>
+    <path d="M1082 720 C1082 708 1088 702 1095 702 C1102 702 1108 708 1108 720 Z"/>
+  </g>
+
+  <!-- gateway arch glowing through the gopuram base -->
+  <path d="M772 800 V740 C772 722 784 712 800 712 C816 712 828 722 828 740 V800 Z" fill="url(#hero-gate)"/>
+  <path d="M772 800 V740 C772 722 784 712 800 712 C816 712 828 722 828 740 V800"
+    fill="none" stroke="#E9C46A" stroke-width="1" opacity=".3"/>
+
+  <!-- faint carved-course lines on the tiers -->
+  <g stroke="#E9C46A" stroke-width="1" opacity=".15">
+    <path d="M660 644 H940"/>
+    <path d="M692 566 H908"/>
+    <path d="M717 494 H883"/>
+    <path d="M740 428 H860"/>
+    <path d="M760 372 H840"/>
+  </g>
+
+  <!-- west edge-light down the gopuram profile -->
+  <path d="M642 796 L655 644 L675 644 L689 566 L701 566 L714 494 L726 494 L738 428
+    L749 428 L759 372 L776 372 L776 338 L770 338 C772 322 786 312 800 312"
+    fill="none" stroke="#E3C363" stroke-width="1.4" opacity=".85" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- kalasham finial in brass, catching the last light -->
+  <g fill="none" stroke="url(#hero-brass)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M788 310 h24"/>
+    <path d="M791 300 c0 6 3.6 9 9 9 c5.4 0 9 -3 9 -9"/>
+    <path d="M787.5 300 h25"/>
+    <path d="M792.5 297.5 c-3.5 -2.5 -6 -2.8 -8.5 -1.5"/>
+    <path d="M807.5 297.5 c3.5 -2.5 6 -2.8 8.5 -1.5"/>
+    <path d="M796 296.5 c-2 -3.5 -4.2 -4.7 -6.7 -4.4"/>
+    <path d="M804 296.5 c2 -3.5 4.2 -4.7 6.7 -4.4"/>
+    <circle cx="800" cy="292" r="4"/>
+  </g>
+  <!-- saffron bud tip of the kalasham -->
+  <path d="M800 275.5 C802.4 279.5 802.4 283 800 286.5 C797.6 283 797.6 279.5 800 275.5 Z" fill="#E8A13D"/>
+</svg>

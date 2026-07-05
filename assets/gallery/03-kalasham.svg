@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="g03">
+  <title id="g03">Illustration of a golden kalasham with mango leaves and coconut, crowned with radiating light</title>
+  <defs>
+    <linearGradient id="sky03" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#241014"/><stop offset=".6" stop-color="#3d151c"/><stop offset="1" stop-color="#6B1F24"/>
+    </linearGradient>
+    <linearGradient id="brass03" x1="300" y1="120" x2="500" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C46A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow03" cx="400" cy="300" r="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A13D" stop-opacity=".4"/><stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky03)"/>
+  <rect width="800" height="600" fill="url(#glow03)"/>
+  <!-- radiating rays -->
+  <g stroke="url(#brass03)" stroke-width="1.2" stroke-linecap="round" opacity=".65">
+    <path d="M400 150 V96"/><path d="M340 165 l-20 -46"/><path d="M460 165 l20 -46"/>
+    <path d="M300 205 l-40 -34"/><path d="M500 205 l40 -34"/><path d="M270 270 l-52 -20"/><path d="M530 270 l52 -20"/>
+  </g>
+  <g fill="none" stroke="url(#brass03)" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+    <!-- coconut -->
+    <ellipse cx="400" cy="200" rx="30" ry="34"/>
+    <path d="M400 166 q-6 -14 0 -26 q6 12 0 26" stroke-width="1.3"/>
+    <!-- mango leaves around the rim -->
+    <path d="M370 236 q-40 -6 -54 -44 q40 8 54 44"/><path d="M430 236 q40 -6 54 -44 q-40 8 -54 44"/>
+    <path d="M355 244 q-46 6 -66 -22 q44 -4 66 22"/><path d="M445 244 q46 6 66 -22 q-44 -4 -66 22"/>
+    <!-- pot neck & rim -->
+    <path d="M356 244 h88 l-8 24 h-72 Z"/>
+    <path d="M348 268 h104" stroke-width="2.2"/>
+    <!-- pot body -->
+    <path d="M360 268 C320 300 316 380 360 452 h80 C484 380 480 300 440 268"/>
+    <!-- decorative bands -->
+    <path d="M344 316 q56 22 112 0" stroke-width="1.2" opacity=".85"/>
+    <path d="M336 372 q64 26 128 0" stroke-width="1.2" opacity=".85"/>
+    <circle cx="400" cy="344" r="9" stroke-width="1.3"/>
+    <path d="M338 452 h124" stroke-width="2.2"/>
+    <path d="M352 452 l-10 30 h116 l-10 -30" />
+    <path d="M330 482 h140" stroke-width="2"/>
+  </g>
+  <!-- frame -->
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="url(#brass03)" stroke-width="2"/>
+  <rect x="27" y="27" width="746" height="546" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</svg>

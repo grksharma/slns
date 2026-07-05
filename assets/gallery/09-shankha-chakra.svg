@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="g09">
+  <title id="g09">Illustration of the Vaishnava emblems — shankha, chakra and the tirunamam within a medallion</title>
+  <defs>
+    <linearGradient id="sky09" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#241014"/><stop offset=".6" stop-color="#3d151c"/><stop offset="1" stop-color="#6B1F24"/>
+    </linearGradient>
+    <linearGradient id="brass09" x1="240" y1="120" x2="560" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C46A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow09" cx="400" cy="300" r="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A13D" stop-opacity=".3"/><stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky09)"/>
+  <rect width="800" height="600" fill="url(#glow09)"/>
+  <!-- medallion -->
+  <g fill="none" stroke="url(#brass09)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="400" cy="300" r="188"/>
+    <circle cx="400" cy="300" r="176" stroke-width="1" opacity=".55"/>
+    <!-- beaded ring -->
+    <g stroke="none" fill="#C9A227" opacity=".8">
+      <circle cx="400" cy="112" r="2.4"/><circle cx="466" cy="124" r="2.4"/><circle cx="520" cy="164" r="2.4"/><circle cx="556" cy="222" r="2.4"/><circle cx="568" cy="300" r="2.4"/><circle cx="556" cy="378" r="2.4"/><circle cx="520" cy="436" r="2.4"/><circle cx="466" cy="476" r="2.4"/><circle cx="400" cy="488" r="2.4"/><circle cx="334" cy="476" r="2.4"/><circle cx="280" cy="436" r="2.4"/><circle cx="244" cy="378" r="2.4"/><circle cx="232" cy="300" r="2.4"/><circle cx="244" cy="222" r="2.4"/><circle cx="280" cy="164" r="2.4"/><circle cx="334" cy="124" r="2.4"/>
+    </g>
+  </g>
+  <!-- chakra (discus) on the left -->
+  <g fill="none" stroke="url(#brass09)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(322 300)">
+    <circle r="58"/><circle r="30"/><circle r="10"/>
+    <g stroke-width="1.2">
+      <path d="M0 -58 V-30 M0 58 V30 M-58 0 H-30 M58 0 H30"/>
+      <path d="M-41 -41 l20 20 M41 -41 l-20 20 M-41 41 l20 -20 M41 41 l-20 -20"/>
+    </g>
+    <!-- flame points on rim -->
+    <g stroke-width="1.1" opacity=".8"><path d="M0 -58 l6 -12 l-12 0 Z" fill="#E8A13D" stroke="none"/><path d="M0 58 l6 12 l-12 0 Z" fill="#E8A13D" stroke="none"/><path d="M58 0 l12 6 l0 -12 Z" fill="#E8A13D" stroke="none"/><path d="M-58 0 l-12 6 l0 -12 Z" fill="#E8A13D" stroke="none"/></g>
+  </g>
+  <!-- shankha (conch) on the right -->
+  <g fill="none" stroke="url(#brass09)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(478 300)">
+    <path d="M6 -58 C34 -44 44 -8 34 34 C28 58 8 64 -10 58 C-30 50 -34 24 -20 6 C-8 -10 12 -8 16 8 C18 18 10 24 2 22"/>
+    <path d="M6 -58 C-8 -50 -18 -34 -20 -12"/>
+    <path d="M34 34 C26 48 6 52 -14 46" stroke-width="1.2" opacity=".8"/>
+    <path d="M-20 58 q-14 6 -26 2" stroke-width="1.3"/>
+  </g>
+  <!-- tirunamam (namam) at the top centre -->
+  <g transform="translate(400 224)">
+    <path d="M-30 44 C-30 -20 -22 -44 -14 -44 C-6 -44 -2 -16 -2 40" fill="none" stroke="url(#brass09)" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M30 44 C30 -20 22 -44 14 -44 C6 -44 2 -16 2 40" fill="none" stroke="url(#brass09)" stroke-width="1.6" stroke-linecap="round"/>
+    <path d="M0 42 V-30 C0 -40 -0 -44 0 -44" stroke="#E8A13D" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <!-- frame -->
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="url(#brass09)" stroke-width="2"/>
+  <rect x="27" y="27" width="746" height="546" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</svg>

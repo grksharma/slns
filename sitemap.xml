@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- URLs use this repo's default GitHub Pages address. EDIT-ME: if you enable Pages under
+     a project path this is already correct; if you later attach a custom domain (e.g.
+     https://bkptemple.org/), replace the base of every <loc> below to match. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://grksharma.github.io/bkp-temple-website/index.html</loc><priority>1.0</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/about.html</loc><priority>0.8</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/timings.html</loc><priority>0.9</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/sevas.html</loc><priority>0.8</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/festivals.html</loc><priority>0.8</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/donations.html</loc><priority>0.7</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/gallery.html</loc><priority>0.6</priority></url>
+  <url><loc>https://grksharma.github.io/bkp-temple-website/visit.html</loc><priority>0.9</priority></url>
+</urlset>

@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!-- ========================================================================
+     visit.html — Visit & Contact (మార్గదర్శి · సంప్రదించండి)
+     Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+
+     SCOPED STYLE ADDITIONS (components not present in css/styles.css, added
+     as a small page-scoped <style> block in <head>, per build notes):
+       .map-frame          — gold-hairline frame for the keyless Google Maps
+                             iframe (matches the shared card treatment)
+       .map-frame iframe   — responsive sizing for the embed
+       .btn-row            — wrapping flex row for the directions/contact buttons
+       .contact-address    — non-italic <address> block on ivory
+     Everything else on this page uses the shared design system unchanged.
+     ======================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visit &amp; Contact · Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
+  <meta name="description" content="How to reach Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally — Keshampet mandal, Ranga Reddy district, Telangana 509408. Routes from Hyderabad by road, train and bus, map, nearby temples and contact details.">
+  <meta property="og:title" content="Visit &amp; Contact · శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
+  <meta property="og:description" content="About 64 km from Hyderabad via NH44 and Shadnagar, 5 km beyond Keshampet. Map, directions, nearby places worth visiting and the temple's contact numbers.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Telugu:wght@500;700&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-scoped additions for visit.html only — see the comment at the top
+       of this file. Tokens come from the shared stylesheet; nothing here
+       overrides shared components or focus styles. */
+    .map-frame {
+      border: var(--hairline);
+      border-radius: var(--radius-card);
+      overflow: hidden;
+      background: var(--ivory-card);
+      box-shadow: var(--shadow-relief);
+    }
+    .map-frame iframe {
+      display: block;
+      width: 100%;
+      height: clamp(300px, 55vw, 420px);
+      border: 0;
+    }
+    .btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--space-3);
+    }
+    .contact-address {
+      font-style: normal;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ========================================================================
+     CANONICAL HEADER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the first thing inside <body>
+     on every page. The ONLY permitted change: add aria-current="page" to
+     the nav link of the page you are building (and nothing else).
+     Requires css/styles.css and js/main.js (the footer partial loads JS).
+     ======================================================================== -->
+
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+         temple's main contact number (keep the tel:+91 format, digits only, no spaces). -->
+    <a class="announce__call" href="tel:+91XXXXXXXXXX"><span class="placeholder">+91 XXXXX XXXXX</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" aria-current="page" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <main id="main">
+
+    <!-- Short inner-page hero (no art slot on inner pages) -->
+    <section class="hero hero--short" aria-label="Visit and contact">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__kicker" lang="en">Bhairkhanpally · Keshampet Mandal · Ranga Reddy</span>
+        <h1>
+          <span class="hero__title-te" lang="te">మార్గదర్శి · సంప్రదించండి</span>
+          <span class="hero__title-en" lang="en">Visit &amp; Contact</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ================================================================
+         01 · HOW TO REACH
+         ================================================================ -->
+    <section class="section" aria-labelledby="reach-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">01</span> · మార్గదర్శి — How to Reach</span>
+          <h2 class="section__title" id="reach-title" data-en="How to Reach the Temple" data-te="ఆలయానికి ఎలా చేరుకోవాలి">How to Reach the Temple</h2>
+          <span class="section__sub" lang="te">ఆలయానికి ఎలా చేరుకోవాలి</span>
+        </div>
+
+        <div class="flow">
+          <div class="measure">
+            <p data-lang="en">Bhairkhanpally lies in Keshampet mandal of Ranga Reddy district,
+              Telangana — about 5 km beyond the mandal headquarters Keshampet and roughly
+              64 km south of Hyderabad. All road distances below are approximate.</p>
+            <p data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి తెలంగాణలోని రంగారెడ్డి జిల్లా
+              కేశంపేట మండలంలో ఉంది — మండల కేంద్రం కేశంపేట నుంచి సుమారు 5 కి.మీ.,
+              హైదరాబాద్ నుంచి సుమారు 64 కి.మీ. దూరంలో. కింద ఇచ్చిన దూరాలన్నీ సుమారుగా మాత్రమే.</p>
+          </div>
+
+          <div class="card-grid">
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="By Road" data-te="రోడ్డు మార్గం">By Road</h3>
+              <span class="card__sub" lang="te">రోడ్డు మార్గం</span>
+              <ul class="diya-list card__desc">
+                <li data-lang="en">From Hyderabad: take NH44 (the Bangalore highway) south past
+                  Kothur to Shadnagar, then the Shadnagar–Keshampet road; the village is about
+                  5 km beyond Keshampet — roughly 64 km in all, about 1½ hours
+                  (distances approximate).</li>
+                <li data-lang="te" lang="te" hidden>హైదరాబాద్ నుంచి: NH44 మీదుగా కొత్తూరు దాటి
+                  షాద్‌నగర్, అక్కడి నుంచి కేశంపేట రోడ్డు; కేశంపేట దాటాక సుమారు 5 కి.మీ. —
+                  మొత్తం సుమారు 64 కి.మీ., దాదాపు గంటన్నర ప్రయాణం (దూరాలు సుమారుగా).</li>
+                <li data-lang="en">Coming by car, leave NH44 near Shadnagar; Hyderabad to
+                  Shadnagar is about 50–60 km via NH44 or the Outer Ring Road.</li>
+                <li data-lang="te" lang="te" hidden>కారులో వస్తే NH44ను షాద్‌నగర్ వద్ద వదిలి
+                  కేశంపేట రోడ్డు పట్టండి; హైదరాబాద్ నుంచి షాద్‌నగర్ వరకు NH44 లేదా ఔటర్
+                  రింగ్ రోడ్డు మీదుగా సుమారు 50–60 కి.మీ.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="By Train" data-te="రైలు మార్గం">By Train</h3>
+              <span class="card__sub" lang="te">రైలు మార్గం</span>
+              <ul class="diya-list card__desc">
+                <li data-lang="en">Nearest railheads: Shadnagar (SHNR), about 21 km from
+                  Keshampet, and Timmapur (TMX) on Chegur Road near Kothur.</li>
+                <li data-lang="te" lang="te" hidden>సమీప రైల్వే స్టేషన్లు: షాద్‌నగర్ (SHNR) —
+                  కేశంపేట నుంచి సుమారు 21 కి.మీ.; కొత్తూరు సమీపంలో తిమ్మాపూర్ (TMX).</li>
+                <li data-lang="en">MMTS and passenger trains from the Kacheguda side of
+                  Hyderabad stop at both stations; continue by bus or auto via Keshampet.</li>
+                <li data-lang="te" lang="te" hidden>హైదరాబాద్ (కాచిగూడ వైపు) నుంచి MMTS /
+                  ప్యాసింజర్ రైళ్లు ఈ రెండు స్టేషన్లలో ఆగుతాయి; అక్కడి నుంచి బస్సు లేదా
+                  ఆటోలో కేశంపేట మీదుగా చేరుకోవచ్చు.</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="By Bus" data-te="బస్సు మార్గం">By Bus</h3>
+              <span class="card__sub" lang="te">బస్సు మార్గం</span>
+              <ul class="diya-list card__desc">
+                <li data-lang="en">TGSRTC buses run from Hyderabad (MGBS) to Keshampet bus
+                  station — about 64 km, roughly 1½ hours (approximate).</li>
+                <li data-lang="te" lang="te" hidden>హైదరాబాద్ (MGBS) నుంచి కేశంపేట బస్
+                  స్టేషన్ వరకు TGSRTC బస్సులు నడుస్తాయి — సుమారు 64 కి.మీ., దాదాపు గంటన్నర.</li>
+                <li data-lang="en">From Keshampet, local buses and autos cover the last
+                  ~5 km to Bhairkhanpally; the village itself is served by public bus.</li>
+                <li data-lang="te" lang="te" hidden>కేశంపేట నుంచి చివరి సుమారు 5 కి.మీ.
+                  లోకల్ బస్సు లేదా ఆటోలో చేరుకోవచ్చు; గ్రామానికి పబ్లిక్ బస్సు సౌకర్యం కూడా ఉంది.</li>
+              </ul>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ================================================================
+         02 · MAP & DIRECTIONS
+         ================================================================ -->
+    <section class="section" aria-labelledby="map-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">02</span> · ఆలయ మార్గం — Map &amp; Directions</span>
+          <h2 class="section__title" id="map-title" data-en="Map &amp; Directions" data-te="ఆలయ మార్గం">Map &amp; Directions</h2>
+          <span class="section__sub" lang="te">ఆలయ మార్గం</span>
+        </div>
+
+        <div class="flow">
+          <div class="measure">
+            <p data-lang="en">The map below points to Bhairkhanpalle village, Keshampet mandal.
+              Tap “Get Directions” to open the route in Google Maps from wherever you are.</p>
+            <p data-lang="te" lang="te" hidden>కింది మ్యాప్ కేశంపేట మండలంలోని భైర్ఖాన్‌పల్లి
+              గ్రామాన్ని చూపిస్తుంది. మీరు ఉన్న చోటు నుంచి దారి కోసం “మార్గం చూడండి” నొక్కండి.</p>
+          </div>
+
+          <!-- EDIT-ME: The map query points to Bhairkhanpalle village centre. When the
+               committee has the temple's exact Google Maps pin (or plus code), replace
+               "Bhairkhanpalle,+Keshampet,+Telangana" in BOTH the iframe src below AND
+               the Get Directions link that follows. -->
+          <div class="map-frame">
+            <iframe
+              src="https://maps.google.com/maps?q=Bhairkhanpalle,+Keshampet,+Telangana&amp;output=embed"
+              title="Map of Bhairkhanpalle village, Keshampet mandal, Ranga Reddy district, Telangana"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <p class="small muted"
+             data-en="Bhairkhanpalle village · Keshampet mandal · Ranga Reddy district — 509408"
+             data-te="భైర్ఖాన్‌పల్లి గ్రామం · కేశంపేట మండలం · రంగారెడ్డి జిల్లా — 509408">Bhairkhanpalle village · Keshampet mandal · Ranga Reddy district — 509408</p>
+
+          <div class="btn-row">
+            <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bhairkhanpalle,+Keshampet,+Telangana"
+               data-en="Get Directions" data-te="మార్గం చూడండి">Get Directions</a>
+            <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+                 temple's main contact number (href format: tel:+91 followed by 10 digits,
+                 no spaces). -->
+            <a class="btn btn--call" href="tel:+91XXXXXXXXXX">
+              <span data-en="Call the Temple" data-te="ఫోన్ చేయండి">Call the Temple</span>&nbsp;
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+            <!-- EDIT-ME: Replace 91XXXXXXXXXX with the temple's WhatsApp number (country
+                 code 91 + 10 digits, no plus sign, no spaces). Message text is pre-filled. -->
+            <a class="btn btn--whatsapp" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span data-en="WhatsApp" data-te="వాట్సాప్">WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ================================================================
+         03 · NEARBY PLACES WORTH VISITING
+         ================================================================ -->
+    <section class="section" aria-labelledby="nearby-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">03</span> · సమీప దర్శనీయ స్థలాలు — Nearby Places</span>
+          <h2 class="section__title" id="nearby-title" data-en="Nearby Places Worth Visiting" data-te="సమీప దర్శనీయ స్థలాలు">Nearby Places Worth Visiting</h2>
+          <span class="section__sub" lang="te">సమీప దర్శనీయ స్థలాలు</span>
+        </div>
+
+        <div class="card-grid">
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Rameshwaram Temple, Farooqnagar" data-te="రామేశ్వరం దేవాలయం, ఫారూఖ్‌నగర్">Rameshwaram Temple, Farooqnagar</h3>
+            <span class="card__sub" lang="te">రామలింగేశ్వర స్వామి దేవాలయం</span>
+            <p class="card__desc" data-lang="en">A locally famous Ramalingeswara Swamy (Shiva)
+              temple near the old NH7 at Farooqnagar — legend attributes the installation of
+              the linga to Lord Rama. About 20 km from Shadnagar (approximate).</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>ఫారూఖ్‌నగర్ వద్ద పాత NH7
+              సమీపంలోని ప్రసిద్ధ రామలింగేశ్వర స్వామి (శివ) దేవాలయం — లింగ ప్రతిష్ఠ
+              శ్రీరాముడు చేశారని స్థల ఐతిహ్యం. షాద్‌నగర్ నుంచి సుమారు 20 కి.మీ.</p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Statue of Equality, Muchintal" data-te="సమతా మూర్తి, ముచ్చింతల్">Statue of Equality, Muchintal</h3>
+            <span class="card__sub" lang="te">సమతా మూర్తి · దివ్య సాకేతం</span>
+            <p class="card__desc" data-lang="en">The Statue of Equality (Sri Ramanujacharya)
+              at the Chinna Jeeyar Swamy Ashram, with the Divya Saketham temple complex —
+              major spiritual landmarks about 8 km from Kothur (approximate).</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>చిన్న జీయర్ స్వామి ఆశ్రమంలోని
+              సమతా మూర్తి (శ్రీ రామానుజాచార్యులు), దివ్య సాకేతం ఆలయ సముదాయం — కొత్తూరు
+              నుంచి సుమారు 8 కి.మీ. దూరంలోని ప్రసిద్ధ ఆధ్యాత్మిక క్షేత్రాలు.</p>
+          </article>
+
+          <article class="card">
+            <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+            <h3 class="card__title" data-en="Ratnalayam Temple" data-te="రత్నాలయం దేవాలయం">Ratnalayam Temple</h3>
+            <span class="card__sub" lang="te">రత్నాలయం దేవాలయం</span>
+            <p class="card__desc" data-lang="en">A notable Sri Venkateswara Swamy temple near
+              Kothur–Shadnagar, on the NH44 route from Hyderabad — a popular stop for
+              devotees travelling this way.</p>
+            <p class="card__desc" data-lang="te" lang="te" hidden>కొత్తూరు–షాద్‌నగర్ సమీపంలోని
+              ప్రసిద్ధ శ్రీ వేంకటేశ్వర స్వామి దేవాలయం — హైదరాబాద్ నుంచి NH44 మీదుగా వచ్చే
+              భక్తులకు ఇష్టమైన మజిలీ.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ================================================================
+         04 · BEST TIME TO VISIT
+         ================================================================ -->
+    <section class="section" aria-labelledby="besttime-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">04</span> · దర్శనానికి మంచి సమయం — Best Time to Visit</span>
+          <h2 class="section__title" id="besttime-title" data-en="Best Time to Visit" data-te="దర్శనానికి మంచి సమయం">Best Time to Visit</h2>
+          <span class="section__sub" lang="te">దర్శనానికి మంచి సమయం</span>
+        </div>
+
+        <div class="measure">
+          <!-- EDIT-ME: This guidance follows common practice at Narasimha temples in the
+               region (quiet early mornings, busier Saturdays, festival peaks), and the
+               hours follow the site's default daily schedule (modeled on Yadadri/
+               Mattapalli — see research.json). Confirm both with the temple committee
+               and edit freely. -->
+          <ul class="diya-list">
+            <li data-lang="en">Early morning is the quietest time for darshan — the temple
+              opens at 6:00 AM with Suprabhata Seva, followed by the morning abhishekam.
+              See the full <a href="timings.html">ritual schedule</a>.</li>
+            <li data-lang="te" lang="te" hidden>ఉదయం వేళ దర్శనం ప్రశాంతంగా ఉంటుంది —
+              ఆలయం ఉదయం 6:00కి సుప్రభాత సేవతో తెరుచుకుంటుంది; ఆ తర్వాత అభిషేకం జరుగుతుంది.
+              పూర్తి <a href="timings.html">పూజా క్రమం</a> చూడండి.</li>
+            <li data-lang="en">Saturdays draw larger crowds at Narasimha temples, especially
+              in Shravana masam — come early for an unhurried darshan.</li>
+            <li data-lang="te" lang="te" hidden>నరసింహ క్షేత్రాల్లో శనివారాల్లో — ముఖ్యంగా
+              శ్రావణ మాసంలో — భక్తుల రద్దీ ఎక్కువగా ఉంటుంది; ప్రశాంత దర్శనానికి ఉదయమే రండి.</li>
+            <li data-lang="en">Festival seasons are the most vibrant — and the most crowded —
+              times: Sri Narasimha Jayanti in Vaisakha masam (April–May) and the annual
+              Brahmotsavam / jatara. See the <a href="festivals.html">Festivals</a> page.</li>
+            <li data-lang="te" lang="te" hidden>పండుగ సీజన్లలో ఆలయం అత్యంత వైభవంగా — అంతే
+              రద్దీగా — ఉంటుంది: వైశాఖ మాసంలో (ఏప్రిల్–మే) శ్రీ నరసింహ జయంతి, వార్షిక
+              బ్రహ్మోత్సవం / జాతర. వివరాలకు <a href="festivals.html">ఉత్సవాలు</a> పేజీ చూడండి.</li>
+            <li data-lang="en">The temple closes for the afternoon at 12:00 noon and reopens
+              at 5:00 PM — plan midday visits accordingly.</li>
+            <li data-lang="te" lang="te" hidden>మధ్యాహ్నం 12:00కి ఆలయం మూసివేసి సాయంత్రం
+              5:00కి తిరిగి తెరుస్తారు — మధ్యాహ్న సందర్శనను అందుకు అనుగుణంగా ప్రణాళిక
+              చేసుకోండి.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ================================================================
+         05 · CONTACT
+         ================================================================ -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">05</span> · సంప్రదించండి — Contact</span>
+          <h2 class="section__title" id="contact-title" data-en="Contact the Temple" data-te="సంప్రదించండి">Contact the Temple</h2>
+          <span class="section__sub" lang="te">సంప్రదించండి</span>
+        </div>
+
+        <div class="flow">
+          <div class="measure flow">
+            <h3 data-en="Temple Address" data-te="ఆలయ చిరునామా">Temple Address</h3>
+            <!-- EDIT-ME: If the temple has a door number, street or landmark line
+                 (e.g. "near the gram panchayat office"), add it between the temple
+                 name and the village line below. -->
+            <address class="contact-address">
+              <span data-en="Sri Lakshmi Narasimha Swamy Temple" data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Lakshmi Narasimha Swamy Temple</span><br>
+              <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="భైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+              <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+            </address>
+          </div>
+
+          <div class="card-grid">
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="Archakulu · Temple Priest" data-te="అర్చకులు">Archakulu · Temple Priest</h3>
+              <span class="card__sub" lang="te">అర్చకులు</span>
+              <p class="card__desc" data-lang="en">For darshan, daily poojas and seva timings —
+                speak to the archakulu (temple priest).</p>
+              <p class="card__desc" data-lang="te" lang="te" hidden>దర్శనం, నిత్య పూజలు,
+                సేవల వేళల వివరాలకు అర్చకులను సంప్రదించండి.</p>
+              <p class="card__links">
+                <!-- EDIT-ME: Replace +91XXXXXXXXXX / 91XXXXXXXXXX in the hrefs AND the
+                     visible number with the priest's real number (tel: needs +91 and
+                     10 digits; wa.me needs 91 and 10 digits — no spaces). -->
+                <a href="tel:+91XXXXXXXXXX"><span data-en="Call" data-te="ఫోన్ చేయండి">Call</span>&nbsp;<span class="placeholder">+91 XXXXX XXXXX</span></a>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+                  <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+                  <span data-en="WhatsApp" data-te="వాట్సాప్">WhatsApp</span>
+                </a>
+              </p>
+            </article>
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="Temple Committee" data-te="ఆలయ కమిటీ">Temple Committee</h3>
+              <span class="card__sub" lang="te">ఆలయ కమిటీ</span>
+              <p class="card__desc" data-lang="en">For donations, temple development works and
+                general enquiries — the temple committee.</p>
+              <p class="card__desc" data-lang="te" lang="te" hidden>విరాళాలు, ఆలయ అభివృద్ధి
+                పనులు, ఇతర వివరాలకు ఆలయ కమిటీని సంప్రదించండి.</p>
+              <p class="card__links">
+                <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with
+                     the committee contact's real number (tel:+91 + 10 digits, no spaces). -->
+                <a href="tel:+91XXXXXXXXXX"><span data-en="Call" data-te="ఫోన్ చేయండి">Call</span>&nbsp;<span class="placeholder">+91 XXXXX XXXXX</span></a>
+                <a href="donations.html" data-en="Donations →" data-te="విరాళాలు →">Donations →</a>
+              </p>
+            </article>
+
+            <article class="card">
+              <p class="card__icon"><img src="assets/lotus.svg" alt="" width="40" height="40"></p>
+              <h3 class="card__title" data-en="Annadanam &amp; Sevas" data-te="అన్నదానం &amp; సేవలు">Annadanam &amp; Sevas</h3>
+              <span class="card__sub" lang="te">అన్నదానం · సేవలు</span>
+              <p class="card__desc" data-lang="en">To sponsor annadanam or book sevas such as
+                Swamy Vari Kalyanotsavam and abhishekam.</p>
+              <p class="card__desc" data-lang="te" lang="te" hidden>అన్నదానం స్పాన్సర్
+                చేయడానికి, స్వామివారి కల్యాణోత్సవం, అభిషేకం వంటి సేవల బుకింగ్ కోసం.</p>
+              <p class="card__links">
+                <!-- EDIT-ME: Replace +91XXXXXXXXXX / 91XXXXXXXXXX in the hrefs AND the
+                     visible number with the annadanam/seva booking number (tel: needs
+                     +91 and 10 digits; wa.me needs 91 and 10 digits — no spaces). -->
+                <a href="tel:+91XXXXXXXXXX"><span data-en="Call" data-te="ఫోన్ చేయండి">Call</span>&nbsp;<span class="placeholder">+91 XXXXX XXXXX</span></a>
+                <a href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+                  <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+                  <span data-en="WhatsApp" data-te="వాట్సాప్">WhatsApp</span>
+                </a>
+                <a href="sevas.html" data-en="Seva list →" data-te="సేవల జాబితా →">Seva list →</a>
+              </p>
+            </article>
+
+          </div>
+
+          <div class="measure">
+            <p data-lang="en">This site has no contact form — a phone call or a WhatsApp
+              message is the quickest way to reach the temple. For seva bookings, WhatsApp
+              is preferred: send your name, gotram, the seva and your preferred date.</p>
+            <p data-lang="te" lang="te" hidden>ఈ సైట్‌లో సంప్రదింపు ఫారం లేదు — ఫోన్ కాల్
+              లేదా వాట్సాప్ సందేశమే ఆలయాన్ని చేరే వేగవంతమైన మార్గం. సేవల బుకింగ్‌కు
+              వాట్సాప్ ఉత్తమం: మీ పేరు, గోత్రం, సేవ, కావలసిన తేదీ పంపండి.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- ========================================================================
+     CANONICAL FOOTER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the last thing inside <body>
+     on every page (after </main>). Do not restyle or restructure it.
+     It ends with the shared <script src="js/main.js" defer> tag — include
+     that script ONCE per page; copying this footer already does it.
+     ======================================================================== -->
+
+<!-- Village skyline over the ember horizon: the footer's top edge -->
+<svg class="footer-skyline" viewBox="0 0 1600 110" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <g fill="#241014">
+    <!-- compound walls with lotus-bud coping -->
+    <path d="M0 92 H93 q5 -7 10 0 H293 q5 -7 10 0 H493 q5 -7 10 0 H693 q5 -7 10 0 H744 V110 H0 Z"/>
+    <path d="M856 92 H907 q5 -7 10 0 H1107 q5 -7 10 0 H1307 q5 -7 10 0 H1507 q5 -7 10 0 H1600 V110 H856 Z"/>
+    <!-- miniature stepped gopuram -->
+    <path d="M756 110 L763 72 L775 72 L781 48 L791 48 L795 30 C796 21 798 18 800 18 C802 18 804 21 805 30 L809 48 L819 48 L825 72 L837 72 L844 110 Z"/>
+    <!-- neem trees -->
+    <rect x="297" y="84" width="6" height="26"/>
+    <circle cx="300" cy="72" r="20"/>
+    <circle cx="285" cy="80" r="14"/>
+    <circle cx="316" cy="79" r="15"/>
+    <rect x="517" y="92" width="5" height="18"/>
+    <circle cx="520" cy="82" r="14"/>
+    <circle cx="509" cy="88" r="10"/>
+    <circle cx="532" cy="87" r="11"/>
+    <rect x="1237" y="84" width="6" height="26"/>
+    <circle cx="1240" cy="72" r="19"/>
+    <circle cx="1226" cy="80" r="13"/>
+    <circle cx="1255" cy="79" r="14"/>
+    <!-- village house -->
+    <path d="M1025 88 L1052 74 L1080 88 V110 H1025 Z"/>
+  </g>
+  <!-- gold kalasham tip on the gopuram -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round">
+    <path d="M800 16 V12"/>
+    <circle cx="800" cy="9" r="2.2"/>
+  </g>
+  <!-- the 1px ember horizon line -->
+  <rect x="0" y="108.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+</svg>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1 · seal + about + address -->
+      <div class="footer-col">
+        <p class="footer-seal">
+          <img src="assets/emblem.svg" alt="" width="38" height="38">
+          <span>
+            <span class="footer-seal__te" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="footer-seal__en" lang="en">Bhairkhanpally Grama Devalayam</span>
+          </span>
+        </p>
+        <!-- EDIT-ME: Confirm the Telugu spelling of the village name (భైర్ఖాన్‌పల్లి)
+             with the temple committee before publishing. -->
+        <p class="footer-about" data-lang="en">The village temple (grama devalayam) of Bhairkhanpally,
+          where Sri Lakshmi Narasimha Swamy — the Lord in His peaceful form with Sri Lakshmi Devi —
+          is worshipped. Bhairkhanpally lies in Keshampet mandal, Ranga Reddy district, Telangana.</p>
+        <p class="footer-about" data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి గ్రామ దేవాలయం —
+          శ్రీ లక్ష్మీ దేవి సమేతంగా శాంత స్వరూపుడైన శ్రీ లక్ష్మీ నరసింహ స్వామివారు ఇక్కడ కొలువై ఉన్నారు.
+          భైర్ఖాన్‌పల్లి కేశంపేట మండలం, రంగారెడ్డి జిల్లా, తెలంగాణలో ఉంది.</p>
+        <address class="footer-address">
+          <span data-en="Sri Lakshmi Narasimha Swamy Temple" data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Lakshmi Narasimha Swamy Temple</span><br>
+          <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="భైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+          <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+        </address>
+      </div>
+
+      <!-- Column 2 · quick links -->
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-col__title" data-en="Quick Links" data-te="త్వరిత లింకులు">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+          <li><a href="about.html" data-en="About the Temple" data-te="ఆలయ చరిత్ర">About the Temple</a></li>
+          <li><a href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a></li>
+          <li><a href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a></li>
+          <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+          <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+          <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+          <li><a href="visit.html" data-en="Plan Your Visit" data-te="దర్శనం">Plan Your Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column 3 · darshan hours summary -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Darshan Hours" data-te="దర్శన వేళలు">Darshan Hours</h2>
+        <!-- EDIT-ME: These hours follow the daily schedule used across the site
+             (modeled on Yadadri/Mattapalli practice). Adjust once the committee
+             confirms this temple's actual timings — and keep timings.html in sync. -->
+        <ul class="footer-hours">
+          <li><span data-en="Morning:" data-te="ఉదయం:">Morning:</span> <span class="tnum">6:00 AM – 12:00 noon</span></li>
+          <li><span data-en="Evening:" data-te="సాయంత్రం:">Evening:</span> <span class="tnum">5:00 PM – 8:00 PM</span></li>
+        </ul>
+        <p><a href="timings.html" data-en="Full ritual schedule →" data-te="పూర్తి పూజా క్రమం →">Full ritual schedule →</a></p>
+      </div>
+
+      <!-- Column 4 · contact -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Contact" data-te="సంప్రదించండి">Contact</h2>
+        <ul class="footer-phones">
+          <!-- EDIT-ME: Replace +91XXXXXXXXXX in each href AND each visible number
+               with real numbers (href format: tel:+91 then 10 digits, no spaces). -->
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple priest:" data-te="అర్చకులు:">Temple priest:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple committee:" data-te="ఆలయ కమిటీ:">Temple committee:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <!-- EDIT-ME: Replace 91XXXXXXXXXX with the WhatsApp number (country code 91
+               + 10 digits, no plus sign, no spaces). The message text is pre-filled. -->
+          <li>
+            <a class="footer-phone" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span class="footer-phone__label" data-en="WhatsApp:" data-te="వాట్సాప్:">WhatsApp:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sri Narasimha Gayatri — the footer's sloka (one placement, per spec) -->
+    <div class="footer-sloka">
+      <p class="footer-sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>तन्नो नारसिंहः प्रचोदयात् ॥</p>
+      <span class="footer-sloka__tr" lang="en">May we know the Lord of adamantine nails; may we meditate on Him of sharp fangs.
+        May that Lord Narasimha illumine our intellect.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span>
+        <span data-en="Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved."
+              data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయ కమిటీ, భైర్ఖాన్‌పల్లి (గ్రామ దేవాలయం). సర్వ హక్కులు కమిటీవే.">Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved.</span></p>
+      <p class="small"
+         data-en="Seva, timing and festival details on this site are maintained by the temple committee."
+         data-te="ఈ సైట్‌లోని సేవలు, దర్శన వేళలు, ఉత్సవ వివరాలు ఆలయ కమిటీ నిర్వహణలో ఉంటాయి.">Seva, timing and festival details on this site are maintained by the temple committee.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared script — one per page, last thing before </body>. -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

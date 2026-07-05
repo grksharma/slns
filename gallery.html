@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<!-- ========================================================================
+     gallery.html — Photo Gallery (ఫోటో గ్యాలరీ)
+     Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Uses ONLY classes from css/styles.css — no page-scoped <style> additions.
+     No photographs of this temple exist yet, so each tile is a hand-authored
+     SVG illustration in the site's own engraving style (assets/gallery/*.svg),
+     standing in HONESTLY for the photograph that will replace it. There are no
+     "coming soon" shells and no stock images (STYLEGUIDE §6.10, §10.4).
+     ======================================================================== -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Photo Gallery · Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
+  <meta name="description" content="A gallery of Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally — the gopuram, deeparadhana, the annual Rathotsavam and more. Illustrated in the temple's own style until devotees' photographs take their place.">
+  <meta property="og:title" content="Photo Gallery · శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
+  <meta property="og:description" content="The gopuram, the sanctum, deeparadhana and the annual Jatara of the village temple — with an invitation to devotees to share their own photographs.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Telugu:wght@500;700&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ========================================================================
+     CANONICAL HEADER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the first thing inside <body>
+     on every page. The ONLY permitted change: add aria-current="page" to
+     the nav link of the page you are building (and nothing else).
+     Requires css/styles.css and js/main.js (the footer partial loads JS).
+     ======================================================================== -->
+
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+         temple's main contact number (keep the tel:+91 format, digits only, no spaces). -->
+    <a class="announce__call" href="tel:+91XXXXXXXXXX"><span class="placeholder">+91 XXXXX XXXXX</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="gallery.html" aria-current="page" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+  <main id="main">
+
+    <!-- ==================================================================
+         HERO (short, inner-page variant)
+         ================================================================== -->
+    <section class="hero hero--short">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <span class="hero__kicker" lang="en">Bhairkhanpally · Keshampet Mandal · Ranga Reddy</span>
+        <h1>
+          <span class="hero__title-te" lang="te">ఫోటో గ్యాలరీ</span>
+          <span class="hero__title-en" lang="en">Photo Gallery</span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- ==================================================================
+         01 · THE GALLERY — intro + illustrated tiles (lightbox)
+         ================================================================== -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">01</span> · ఫోటో గ్యాలరీ — The Gallery</span>
+          <h2 class="section__title" id="gallery-title" data-en="Darshanam in Pictures" data-te="చిత్రమాలిక">Darshanam in Pictures</h2>
+          <span class="section__sub" lang="te">చిత్రమాలిక</span>
+        </div>
+
+        <div class="measure">
+          <p data-lang="en">Photographs of Sri Lakshmi Narasimha Swamy and His temple are being
+            gathered. Until they are ready, each frame below is a hand-drawn illustration in the
+            temple's own style — an honest placeholder for the photograph that will one day take its
+            place. Tap any frame to view it larger.</p>
+          <p data-lang="te" lang="te" hidden>శ్రీ లక్ష్మీ నరసింహ స్వామివారి, ఆలయ ఫోటోలు
+            సేకరించబడుతున్నాయి. అవి సిద్ధమయ్యే వరకు, కింది ప్రతి చిత్రం ఆలయ శైలిలో గీసిన కళాకృతి —
+            త్వరలో దాని స్థానంలో నిజమైన ఫోటో వస్తుంది. పెద్దగా చూడటానికి ఏ చిత్రాన్నైనా తాకండి.</p>
+        </div>
+
+        <!-- EDIT-ME (whole gallery): To publish real photographs, replace the file in BOTH the
+             <a href="..."> and the <img src="..."> of each figure below with your photo, and
+             rewrite that image's alt text to describe the actual photograph. Recommended: landscape
+             JPG, about 1600×1200px, saved under ~400 KB each. Keep the <figcaption> (both data-en
+             and data-te). You may add more <figure> blocks by copying one and pointing it at a new
+             file in assets/gallery/. Photos of people should be published only with their consent. -->
+        <div class="gallery-grid" data-gallery>
+
+          <!-- EDIT-ME: replace 01-gopuram.svg with a photo of the temple gopuram / entrance tower. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/01-gopuram.svg">
+              <img src="assets/gallery/01-gopuram.svg" alt="Illustration of the temple gopuram silhouetted against the dusk sky — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="The Temple Gopuram" data-te="ఆలయ గోపురం">The Temple Gopuram</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 02-prabhavali.svg with a photo of the moolavirat (sanctum deity),
+               used only with the archakulu's / committee's permission. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/02-prabhavali.svg">
+              <img src="assets/gallery/02-prabhavali.svg" alt="Illustration of the sanctum arch enshrining the sacred flame — placeholder for a photograph of the moolavirat" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="Moolavirat — Sri Lakshmi Narasimha Swamy" data-te="మూలవిరాట్ — శ్రీ లక్ష్మీ నరసింహ స్వామి">Moolavirat — Sri Lakshmi Narasimha Swamy</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 03-kalasham.svg with a photo of the vimana kalasham / temple crest. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/03-kalasham.svg">
+              <img src="assets/gallery/03-kalasham.svg" alt="Illustration of a golden kalasham with mango leaves and coconut — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="The Vimana Kalasham" data-te="విమాన కలశం">The Vimana Kalasham</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 04-deepam.svg with a photo of deeparadhana / the evening harathi. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/04-deepam.svg">
+              <img src="assets/gallery/04-deepam.svg" alt="Illustration of a row of lit oil lamps for deeparadhana — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="Deeparadhana" data-te="దీపారాధన">Deeparadhana</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 05-lotus.svg with a photo of the temple tank / kolanu, or a floral alankaram. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/05-lotus.svg">
+              <img src="assets/gallery/05-lotus.svg" alt="Illustration of a lotus in bloom, the seat of Sri Lakshmi — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="The Lotus — Seat of Sri Lakshmi" data-te="కమలం — శ్రీ లక్ష్మీ ఆసనం">The Lotus — Seat of Sri Lakshmi</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 06-ratham.svg with a photo of the annual Rathotsavam (chariot procession). -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/06-ratham.svg">
+              <img src="assets/gallery/06-ratham.svg" alt="Illustration of the temple chariot in procession during Rathotsavam — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="Rathotsavam — The Jatara" data-te="రథోత్సవం — జాతర">Rathotsavam — The Jatara</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 07-ghanta.svg with a photo of the temple bell / a ritual moment. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/07-ghanta.svg">
+              <img src="assets/gallery/07-ghanta.svg" alt="Illustration of the temple bell rung at the time of aarti — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="The Temple Bell" data-te="ఆలయ గంట">The Temple Bell</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 08-tulasi.svg with a photo of the tulasi brindavanam in the temple courtyard. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/08-tulasi.svg">
+              <img src="assets/gallery/08-tulasi.svg" alt="Illustration of a tulasi plant in its brindavanam — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="Tulasi Brindavanam" data-te="తులసి బృందావనం">Tulasi Brindavanam</figcaption>
+          </figure>
+
+          <!-- EDIT-ME: replace 09-shankha-chakra.svg with a photo of the temple's Shankha–Chakra / dhwaja sthambham. -->
+          <figure class="gallery-figure reveal">
+            <a class="gallery-item" href="assets/gallery/09-shankha-chakra.svg">
+              <img src="assets/gallery/09-shankha-chakra.svg" alt="Illustration of the Vaishnava emblems — shankha, chakra and the tirunamam — placeholder for a photograph" loading="lazy" width="800" height="600">
+            </a>
+            <figcaption data-en="Shankham &amp; Chakram" data-te="శంఖం &amp; చక్రం">Shankham &amp; Chakram</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="divider" role="presentation">
+      <img src="assets/divider.svg" alt="" width="240" height="24">
+    </div>
+
+    <!-- ==================================================================
+         02 · PHOTO SEVA — invitation to contribute photographs
+         ================================================================== -->
+    <section class="section" aria-labelledby="photoseva-title">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="kicker"><span class="kicker__num">02</span> · ఫోటో సేవ — Share Your Photos</span>
+          <h2 class="section__title" id="photoseva-title" data-en="A Photo Seva" data-te="ఫోటో సేవ">A Photo Seva</h2>
+          <span class="section__sub" lang="te">మీ చిత్రాలను పంచుకోండి</span>
+        </div>
+
+        <div class="measure">
+          <p data-lang="en">Devotees are warmly invited to share their photographs of the temple, its
+            daily sevas, and the annual Brahmotsavam and Jatara. Send them over WhatsApp and, with the
+            temple committee's blessing, they may find a place here for all devotees to cherish.</p>
+          <p data-lang="te" lang="te" hidden>ఆలయం, నిత్య సేవలు, వార్షిక బ్రహ్మోత్సవం, జాతర
+            ఫోటోలను భక్తులు పంచుకోవాలని సాదరంగా ఆహ్వానిస్తున్నాము. వాట్సాప్ ద్వారా పంపండి; ఆలయ కమిటీ
+            అనుమతితో అవి ఇక్కడ భక్తులందరి కోసం చోటు పొందవచ్చు.</p>
+
+          <p class="btn-row">
+            <!-- EDIT-ME: Replace 91XXXXXXXXXX with the temple's WhatsApp number (country code 91
+                 + 10 digits, no plus sign, no spaces). The message text is pre-filled. -->
+            <a class="btn btn--whatsapp" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20would%20like%20to%20share%20some%20photographs%20of%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span data-en="Share Photos on WhatsApp" data-te="వాట్సాప్‌లో ఫోటోలు పంపండి">Share Photos on WhatsApp</span>
+            </a>
+            <a class="btn btn--ghost" href="visit.html" data-en="Contact the Temple" data-te="ఆలయాన్ని సంప్రదించండి">Contact the Temple</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+<!-- ========================================================================
+     CANONICAL FOOTER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the last thing inside <body>
+     on every page (after </main>). Do not restyle or restructure it.
+     It ends with the shared <script src="js/main.js" defer> tag — include
+     that script ONCE per page; copying this footer already does it.
+     ======================================================================== -->
+
+<!-- Village skyline over the ember horizon: the footer's top edge -->
+<svg class="footer-skyline" viewBox="0 0 1600 110" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <g fill="#241014">
+    <!-- compound walls with lotus-bud coping -->
+    <path d="M0 92 H93 q5 -7 10 0 H293 q5 -7 10 0 H493 q5 -7 10 0 H693 q5 -7 10 0 H744 V110 H0 Z"/>
+    <path d="M856 92 H907 q5 -7 10 0 H1107 q5 -7 10 0 H1307 q5 -7 10 0 H1507 q5 -7 10 0 H1600 V110 H856 Z"/>
+    <!-- miniature stepped gopuram -->
+    <path d="M756 110 L763 72 L775 72 L781 48 L791 48 L795 30 C796 21 798 18 800 18 C802 18 804 21 805 30 L809 48 L819 48 L825 72 L837 72 L844 110 Z"/>
+    <!-- neem trees -->
+    <rect x="297" y="84" width="6" height="26"/>
+    <circle cx="300" cy="72" r="20"/>
+    <circle cx="285" cy="80" r="14"/>
+    <circle cx="316" cy="79" r="15"/>
+    <rect x="517" y="92" width="5" height="18"/>
+    <circle cx="520" cy="82" r="14"/>
+    <circle cx="509" cy="88" r="10"/>
+    <circle cx="532" cy="87" r="11"/>
+    <rect x="1237" y="84" width="6" height="26"/>
+    <circle cx="1240" cy="72" r="19"/>
+    <circle cx="1226" cy="80" r="13"/>
+    <circle cx="1255" cy="79" r="14"/>
+    <!-- village house -->
+    <path d="M1025 88 L1052 74 L1080 88 V110 H1025 Z"/>
+  </g>
+  <!-- gold kalasham tip on the gopuram -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round">
+    <path d="M800 16 V12"/>
+    <circle cx="800" cy="9" r="2.2"/>
+  </g>
+  <!-- the 1px ember horizon line -->
+  <rect x="0" y="108.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+</svg>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1 · seal + about + address -->
+      <div class="footer-col">
+        <p class="footer-seal">
+          <img src="assets/emblem.svg" alt="" width="38" height="38">
+          <span>
+            <span class="footer-seal__te" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="footer-seal__en" lang="en">Bhairkhanpally Grama Devalayam</span>
+          </span>
+        </p>
+        <!-- EDIT-ME: Confirm the Telugu spelling of the village name (భైర్ఖాన్‌పల్లి)
+             with the temple committee before publishing. -->
+        <p class="footer-about" data-lang="en">The village temple (grama devalayam) of Bhairkhanpally,
+          where Sri Lakshmi Narasimha Swamy — the Lord in His peaceful form with Sri Lakshmi Devi —
+          is worshipped. Bhairkhanpally lies in Keshampet mandal, Ranga Reddy district, Telangana.</p>
+        <p class="footer-about" data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి గ్రామ దేవాలయం —
+          శ్రీ లక్ష్మీ దేవి సమేతంగా శాంత స్వరూపుడైన శ్రీ లక్ష్మీ నరసింహ స్వామివారు ఇక్కడ కొలువై ఉన్నారు.
+          భైర్ఖాన్‌పల్లి కేశంపేట మండలం, రంగారెడ్డి జిల్లా, తెలంగాణలో ఉంది.</p>
+        <address class="footer-address">
+          <span data-en="Sri Lakshmi Narasimha Swamy Temple" data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Lakshmi Narasimha Swamy Temple</span><br>
+          <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="భైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+          <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+        </address>
+      </div>
+
+      <!-- Column 2 · quick links -->
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-col__title" data-en="Quick Links" data-te="త్వరిత లింకులు">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+          <li><a href="about.html" data-en="About the Temple" data-te="ఆలయ చరిత్ర">About the Temple</a></li>
+          <li><a href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a></li>
+          <li><a href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a></li>
+          <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+          <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+          <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+          <li><a href="visit.html" data-en="Plan Your Visit" data-te="దర్శనం">Plan Your Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column 3 · darshan hours summary -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Darshan Hours" data-te="దర్శన వేళలు">Darshan Hours</h2>
+        <!-- EDIT-ME: These hours follow the daily schedule used across the site
+             (modeled on Yadadri/Mattapalli practice). Adjust once the committee
+             confirms this temple's actual timings — and keep timings.html in sync. -->
+        <ul class="footer-hours">
+          <li><span data-en="Morning:" data-te="ఉదయం:">Morning:</span> <span class="tnum">6:00 AM – 12:00 noon</span></li>
+          <li><span data-en="Evening:" data-te="సాయంత్రం:">Evening:</span> <span class="tnum">5:00 PM – 8:00 PM</span></li>
+        </ul>
+        <p><a href="timings.html" data-en="Full ritual schedule →" data-te="పూర్తి పూజా క్రమం →">Full ritual schedule →</a></p>
+      </div>
+
+      <!-- Column 4 · contact -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Contact" data-te="సంప్రదించండి">Contact</h2>
+        <ul class="footer-phones">
+          <!-- EDIT-ME: Replace +91XXXXXXXXXX in each href AND each visible number
+               with real numbers (href format: tel:+91 then 10 digits, no spaces). -->
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple priest:" data-te="అర్చకులు:">Temple priest:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple committee:" data-te="ఆలయ కమిటీ:">Temple committee:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <!-- EDIT-ME: Replace 91XXXXXXXXXX with the WhatsApp number (country code 91
+               + 10 digits, no plus sign, no spaces). The message text is pre-filled. -->
+          <li>
+            <a class="footer-phone" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span class="footer-phone__label" data-en="WhatsApp:" data-te="వాట్సాప్:">WhatsApp:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sri Narasimha Gayatri — the footer's sloka (one placement, per spec) -->
+    <div class="footer-sloka">
+      <p class="footer-sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>तन्नो नारसिंहः प्रचोदयात् ॥</p>
+      <span class="footer-sloka__tr" lang="en">May we know the Lord of adamantine nails; may we meditate on Him of sharp fangs.
+        May that Lord Narasimha illumine our intellect.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span>
+        <span data-en="Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved."
+              data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయ కమిటీ, భైర్ఖాన్‌పల్లి (గ్రామ దేవాలయం). సర్వ హక్కులు కమిటీవే.">Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved.</span></p>
+      <p class="small"
+         data-en="Seva, timing and festival details on this site are maintained by the temple committee."
+         data-te="ఈ సైట్‌లోని సేవలు, దర్శన వేళలు, ఉత్సవ వివరాలు ఆలయ కమిటీ నిర్వహణలో ఉంటాయి.">Seva, timing and festival details on this site are maintained by the temple committee.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared script — one per page, last thing before </body>. -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

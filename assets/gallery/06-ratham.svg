@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="g06">
+  <title id="g06">Illustration of the temple chariot (ratham) drawn in procession during Rathotsavam</title>
+  <defs>
+    <linearGradient id="sky06" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#241014"/><stop offset=".6" stop-color="#3d151c"/><stop offset="1" stop-color="#6B1F24"/>
+    </linearGradient>
+    <linearGradient id="brass06" x1="180" y1="120" x2="620" y2="520" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C46A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow06" cx="400" cy="300" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A13D" stop-opacity=".3"/><stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky06)"/>
+  <rect width="800" height="600" fill="url(#glow06)"/>
+  <g fill="none" stroke="url(#brass06)" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+    <!-- chariot base platform -->
+    <path d="M250 440 h300 l-16 34 h-268 Z"/>
+    <path d="M262 424 h276" stroke-width="1.3"/>
+    <!-- decorated body -->
+    <path d="M286 424 v-40 h228 v40"/>
+    <path d="M300 384 q100 -22 200 0" stroke-width="1.2" opacity=".85"/>
+    <path d="M316 414 h168" stroke-width="1" opacity=".7"/>
+    <!-- tiered tower (vimana) on the chariot -->
+    <path d="M320 384 l30 -44 h100 l30 44"/>
+    <path d="M344 340 l24 -38 h64 l24 38"/>
+    <path d="M366 302 l18 -34 h32 l18 34"/>
+    <path d="M384 268 q16 -26 32 0"/>
+    <!-- kalasham on top -->
+    <path d="M392 256 h16"/><path d="M393 256 c0 6 3 9 7 9 c4 0 7 -3 7 -9"/><circle cx="400" cy="248" r="3.4"/>
+    <!-- canopy drapes -->
+    <path d="M300 384 q12 16 24 0 q12 16 24 0 q12 16 24 0 q12 16 24 0 q12 16 24 0 q12 16 24 0 q12 16 24 0 q12 16 24 0" stroke-width="1.2" opacity=".8"/>
+    <!-- wheels -->
+    <circle cx="316" cy="492" r="40"/><circle cx="316" cy="492" r="12"/>
+    <circle cx="484" cy="492" r="40"/><circle cx="484" cy="492" r="12"/>
+    <g stroke-width="1.1" opacity=".85">
+      <path d="M316 452 v80 M276 492 h80 M288 464 l56 56 M344 464 l-56 56"/>
+      <path d="M484 452 v80 M444 492 h80 M456 464 l56 56 M512 464 l-56 56"/>
+    </g>
+    <!-- pull ropes -->
+    <path d="M250 462 q-70 -6 -120 20" stroke-width="1.3"/>
+    <path d="M550 462 q70 -6 120 20" stroke-width="1.3"/>
+  </g>
+  <!-- flags -->
+  <g fill="#E8A13D"><path d="M400 248 v-26 l22 8 l-22 8 Z" opacity=".9"/></g>
+  <!-- frame -->
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="url(#brass06)" stroke-width="2"/>
+  <rect x="27" y="27" width="746" height="546" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</svg>

@@ -1,0 +1,71 @@
+<!-- ========================================================================
+     CANONICAL HEADER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the first thing inside <body>
+     on every page. The ONLY permitted change: add aria-current="page" to
+     the nav link of the page you are building (and nothing else).
+     Requires css/styles.css and js/main.js (the footer partial loads JS).
+     ======================================================================== -->
+
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+         temple's main contact number (keep the tel:+91 format, digits only, no spaces). -->
+    <a class="announce__call" href="tel:+91XXXXXXXXXX"><span class="placeholder">+91 XXXXX XXXXX</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>

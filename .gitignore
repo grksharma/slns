@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+._*
+
+# Editor / OS cruft
+*.swp
+*~
+.idea/
+.vscode/
+
+# Local dev servers / archives
+*.zip
+.claude/launch.json

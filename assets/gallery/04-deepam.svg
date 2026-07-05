@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="g04">
+  <title id="g04">Illustration of a row of lit oil lamps for deeparadhana</title>
+  <defs>
+    <linearGradient id="sky04" x1="0" y1="0" x2="0" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#241014"/><stop offset=".6" stop-color="#3d151c"/><stop offset="1" stop-color="#6B1F24"/>
+    </linearGradient>
+    <linearGradient id="brass04" x1="160" y1="200" x2="660" y2="460" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E9C46A"/><stop offset="1" stop-color="#C9A227"/>
+    </linearGradient>
+    <radialGradient id="glow04" cx="400" cy="330" r="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E8A13D" stop-opacity=".38"/><stop offset="1" stop-color="#B85C24" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sky04)"/>
+  <rect width="800" height="600" fill="url(#glow04)"/>
+  <!-- five diyas on a ledge -->
+  <g>
+    <!-- ledge -->
+    <path d="M150 430 H650" fill="none" stroke="url(#brass04)" stroke-width="2" stroke-linecap="round"/>
+    <path d="M176 446 H624" fill="none" stroke="#C9A227" stroke-width="1" stroke-linecap="round" opacity=".5"/>
+  </g>
+  <g fill="none" stroke="url(#brass04)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+    <!-- lamp template repeated -->
+    <g><path d="M176 400 q4 24 24 24 q20 0 24 -24 Z"/><path d="M186 400 h28" stroke-width="1.1" opacity=".8"/><path d="M224 400 q10 -6 20 -2" stroke-width="1.3"/></g>
+    <g transform="translate(112 0)"><path d="M176 400 q4 24 24 24 q20 0 24 -24 Z"/><path d="M186 400 h28" stroke-width="1.1" opacity=".8"/><path d="M224 400 q10 -6 20 -2" stroke-width="1.3"/></g>
+    <g transform="translate(224 -8)"><path d="M176 400 q4 26 24 26 q20 0 24 -26 Z"/><path d="M186 400 h28" stroke-width="1.1" opacity=".8"/><path d="M224 400 q10 -6 20 -2" stroke-width="1.3"/></g>
+    <g transform="translate(336 0)"><path d="M176 400 q4 24 24 24 q20 0 24 -24 Z"/><path d="M186 400 h28" stroke-width="1.1" opacity=".8"/><path d="M224 400 q10 -6 20 -2" stroke-width="1.3"/></g>
+    <g transform="translate(224 -8)"></g>
+  </g>
+  <!-- flames (saffron fills) -->
+  <g fill="#E8A13D">
+    <path d="M244 380 q12 14 0 30 q-12 -16 0 -30 Z"/>
+    <path d="M356 380 q12 14 0 30 q-12 -16 0 -30 Z"/>
+    <path d="M468 372 q13 15 0 32 q-13 -17 0 -32 Z"/>
+    <path d="M580 380 q12 14 0 30 q-12 -16 0 -30 Z"/>
+    <path d="M132 380 q12 14 0 30 q-12 -16 0 -30 Z"/>
+  </g>
+  <g fill="#E3C363" opacity=".85">
+    <path d="M244 392 q6 7 0 15 q-6 -8 0 -15 Z"/><path d="M356 392 q6 7 0 15 q-6 -8 0 -15 Z"/>
+    <path d="M468 386 q6 8 0 16 q-6 -8 0 -16 Z"/><path d="M580 392 q6 7 0 15 q-6 -8 0 -15 Z"/><path d="M132 392 q6 7 0 15 q-6 -8 0 -15 Z"/>
+  </g>
+  <!-- small starry sparks -->
+  <g fill="#E3C363" opacity=".6"><circle cx="300" cy="230" r="1.4"/><circle cx="500" cy="210" r="1.4"/><circle cx="400" cy="180" r="1.6"/></g>
+  <!-- frame -->
+  <rect x="18" y="18" width="764" height="564" fill="none" stroke="url(#brass04)" stroke-width="2"/>
+  <rect x="27" y="27" width="746" height="546" fill="none" stroke="#C9A227" stroke-width="1" opacity=".45"/>
+</svg>

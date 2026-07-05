@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ========================================================================
+       about.html — Alaya Charitra (ఆలయ చరిత్ర)
+       Built from partials/header.html and partials/footer.html (copied verbatim;
+       only change: aria-current="page" on this page's nav link).
+       NO page-level <style> blocks or inline styles were added — every component
+       on this page exists in css/styles.css (sloka, divider, diya-list,
+       watermark, placeholder, measure/flow, reveal).
+       Committee editing: search this file for "EDIT-ME".
+       ======================================================================== -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About the Temple · Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally</title>
+  <meta name="description" content="Alaya Charitra — the kshetram of Bhairkhanpally in Keshampet mandal, Ranga Reddy district (509408), the story of Lord Narasimha, the compassionate Lakshmi Narasimha form, and the temple's slokas and stotras.">
+  <meta property="og:title" content="About the Temple · శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం, Bhairkhanpally">
+  <meta property="og:description" content="The story of Lord Narasimha's avatara, why the Lord with Sri Lakshmi Devi on His lap is worshipped as the compassionate protector, and the slokas of the temple tradition.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Mulish:wght@400;500;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&family=Noto+Serif+Telugu:wght@500;700&family=Noto+Sans+Telugu:wght@400;500&family=Noto+Serif+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ========================================================================
+     CANONICAL HEADER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the first thing inside <body>
+     on every page. The ONLY permitted change: add aria-current="page" to
+     the nav link of the page you are building (and nothing else).
+     Requires css/styles.css and js/main.js (the footer partial loads JS).
+     ======================================================================== -->
+
+<a class="skip-link" href="#main" data-en="Skip to content" data-te="ప్రధాన విషయానికి వెళ్లండి">Skip to content</a>
+
+<!-- Announcement strip: js/main.js renders the ANNOUNCEMENTS array (top of
+     js/main.js) into [data-announcements]. The line below is the no-JS
+     fallback and should mirror the first ANNOUNCEMENTS entry. -->
+<div class="announce" role="region" aria-label="Temple announcements">
+  <div class="container announce__inner">
+    <svg class="announce__diya" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <g fill="none" stroke="#E3C363" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M6.5 19.5 H25.5 C24.8 24.2 20.9 26.4 16 26.4 C11.1 26.4 7.2 24.2 6.5 19.5 Z"/>
+      </g>
+      <path d="M16 8 C18.6 11.8 18.8 14.9 16 18 C13.2 14.9 13.4 11.8 16 8 Z" fill="#E8A13D"/>
+    </svg>
+    <p class="announce__text" data-announcements>
+      <span data-en="Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp"
+            data-te="నిత్య దర్శనం: ఉదయం 6:00 – మధ్యాహ్నం 12:00, సాయంత్రం 5:00 – రాత్రి 8:00 · సేవల బుకింగ్ ఫోన్ / వాట్సాప్ ద్వారా">Daily darshan: 6:00 AM – 12:00 noon and 5:00 – 8:00 PM · Seva bookings by phone or WhatsApp</span>
+    </p>
+    <!-- EDIT-ME: Replace +91XXXXXXXXXX in the href AND the visible number with the
+         temple's main contact number (keep the tel:+91 format, digits only, no spaces). -->
+    <a class="announce__call" href="tel:+91XXXXXXXXXX"><span class="placeholder">+91 XXXXX XXXXX</span></a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container site-header__inner">
+
+    <a class="brand" href="index.html">
+      <img class="brand__emblem" src="assets/emblem.svg" alt="" width="34" height="34">
+      <span class="brand__names">
+        <span class="brand__te te-display" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+        <span class="brand__en" lang="en">Sri Lakshmi Narasimha Swamy Temple · Bhairkhanpally</span>
+      </span>
+    </a>
+
+    <div class="site-header__actions">
+      <button type="button" class="lang-toggle" data-lang-toggle aria-pressed="false"
+              aria-label="Switch language between English and Telugu">
+        <span class="lang-toggle__label" lang="te">తెలుగు</span>
+      </button>
+      <a class="btn btn--primary btn--sm" href="donations.html" data-en="Donate" data-te="విరాళాలు">Donate</a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="site-nav"
+              aria-expanded="false" aria-label="Menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav id="site-nav" class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+        <li><a href="about.html" aria-current="page" data-en="About" data-te="ఆలయ చరిత్ర">About</a></li>
+        <li><a href="timings.html" data-en="Timings" data-te="దర్శన వేళలు">Timings</a></li>
+        <li><a href="sevas.html" data-en="Sevas" data-te="సేవలు">Sevas</a></li>
+        <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+        <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+        <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+        <li><a href="visit.html" data-en="Visit" data-te="దర్శనం">Visit</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ======================================================================
+       PAGE HERO (short) — Alaya Charitra
+       ====================================================================== -->
+  <section class="hero hero--short" aria-label="About the temple">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__content">
+      <span class="hero__kicker" lang="en">Bhairkhanpally · Keshampet Mandal · Ranga Reddy</span>
+      <h1>
+        <span class="hero__title-te te-display" lang="te">ఆలయ చరిత్ర</span>
+        <span class="hero__title-en" lang="en">About the Temple</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- ======================================================================
+       01 · THE KSHETRAM — the village, and the temple at its heart
+       ====================================================================== -->
+  <section class="section" aria-labelledby="kshetram-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker"><span class="kicker__num">01</span> · <span lang="te">క్షేత్రం</span> — The Kshetram</span>
+        <h2 class="section__title" id="kshetram-title" data-en="The Kshetram" data-te="క్షేత్రం">The Kshetram</h2>
+        <span class="section__sub" lang="te">క్షేత్రం</span>
+      </div>
+
+      <div class="measure flow">
+        <p class="lead" data-lang="en">Bhairkhanpally — also written Bhairkhanpalle — is a village
+          and gram panchayat in Keshampet mandal of Ranga Reddy district, Telangana, PIN 509408.</p>
+        <p class="lead" data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి (భైర్ఖాన్‌పల్లె అని కూడా రాస్తారు)
+          తెలంగాణలోని రంగారెడ్డి జిల్లా, కేశంపేట మండలంలోని గ్రామం, గ్రామ పంచాయతీ — పిన్ 509408.</p>
+
+        <p data-lang="en">It is a farming village. The fields around it grow the maize and cotton
+          that are the mainstay of this mandal, and by the 2011 Census its lanes were home to about
+          250 families. Until October 2016 the village belonged to Mahbubnagar district; in the
+          reorganisation of Telangana's districts that year it became part of Ranga Reddy district.
+          The mandal headquarters at Keshampet lies about 5 km away.</p>
+        <p data-lang="te" lang="te" hidden>ఇది వ్యవసాయ గ్రామం. ఈ మండలానికి ప్రధాన పంటలైన మొక్కజొన్న,
+          పత్తి పొలాల నడుమ ఉన్న ఈ ఊరు, 2011 జనగణన ప్రకారం సుమారు 250 కుటుంబాల నివాసం. 2016 అక్టోబరు
+          వరకు ఈ గ్రామం మహబూబ్‌నగర్ జిల్లాలో ఉండేది; ఆ సంవత్సరం జరిగిన జిల్లాల పునర్విభజనలో
+          రంగారెడ్డి జిల్లాలో చేరింది. మండల కేంద్రమైన కేశంపేట సుమారు 5 కి.మీ. దూరంలో ఉంది.</p>
+
+        <p data-lang="en">In a village of this size, the temple is not one building among many —
+          it is the heart of the village's shared life. The grama devalayam of Sri Lakshmi Narasimha
+          Swamy gathers Bhairkhanpally around itself: the day opens with suprabhatam and closes with
+          harathi; births, weddings, harvests and new beginnings are all brought to the Lord's feet;
+          and at jatara time the whole village — and the villages around it — turns toward the Swamy.</p>
+        <p data-lang="te" lang="te" hidden>ఇంత చిన్న ఊరిలో దేవాలయం అనేక కట్టడాల్లో ఒకటి కాదు —
+          అది గ్రామ జీవితానికి హృదయం. శ్రీ లక్ష్మీ నరసింహ స్వామివారి ఈ గ్రామ దేవాలయం ఊరినంతటినీ తన
+          చుట్టూ చేరుస్తుంది: ఉదయం సుప్రభాతంతో రోజు తెరుచుకుంటుంది, సాయంత్రం హారతితో ముగుస్తుంది;
+          పుట్టుకలు, పెళ్లిళ్లు, పంటలు, కొత్త పనులు — అన్నీ స్వామివారి పాదాల చెంతకే వస్తాయి;
+          జాతర వేళ ఊరు ఊరంతా, చుట్టుపక్కల గ్రామాలతో సహా, స్వామివారి వైపు తిరుగుతుంది.</p>
+
+        <!-- EDIT-ME: The temple's own founding history and local legends are deliberately NOT
+             published here because they have not been verified. Replace BOTH placeholder
+             paragraphs below (English and Telugu, kept in sync) with the committee's account:
+             when and by whom the temple was built or renovated, how the vigraham came to the
+             village, and the local legends as told by the village elders. Do not publish a
+             founding year unless the committee confirms it. -->
+        <p data-lang="en"><span class="placeholder">The temple committee will add the temple's own
+          founding history here — when the temple was built and by whom, how the Lord came to be
+          consecrated in Bhairkhanpally, and the legends the village elders tell.</span></p>
+        <p data-lang="te" lang="te" hidden><span class="placeholder">ఆలయ నిర్మాణ చరిత్ర — ఆలయం
+          ఎప్పుడు, ఎవరిచే నిర్మించబడింది, స్వామివారి ప్రతిష్ఠ ఎలా జరిగింది, గ్రామ పెద్దలు చెప్పే
+          స్థల గాథలు — ఈ వివరాలను ఆలయ కమిటీ ఇక్కడ చేరుస్తుంది.</span></p>
+
+        <p><a href="visit.html" data-en="How to reach the temple →" data-te="ఆలయానికి మార్గం →">How to reach the temple →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation">
+    <img src="assets/divider.svg" alt="" width="240" height="24">
+  </div>
+
+  <!-- ======================================================================
+       02 · THE AVATARA — the story of Lord Narasimha (sthala puranam)
+       The one permitted ivory watermark placement on this page (STYLEGUIDE §6.11).
+       ====================================================================== -->
+  <section class="section" aria-labelledby="avatara-title">
+    <div class="container watermark">
+      <div class="section__head reveal">
+        <span class="kicker"><span class="kicker__num">02</span> · <span lang="te">నరసింహ అవతారం</span> — The Avatara</span>
+        <h2 class="section__title" id="avatara-title" data-en="The Avatara" data-te="నరసింహ అవతారం">The Avatara</h2>
+        <span class="section__sub" lang="te">నరసింహ అవతారం</span>
+      </div>
+
+      <div class="measure flow">
+        <p data-lang="en">The story of Lord Narasimha, the fourth avatara of Sri Maha Vishnu, is
+          told in the seventh skandha of the Srimad Bhagavatam. The demon king Hiranyakashipu,
+          burning with hatred for Vishnu after the Lord's Varaha avatara slew his brother
+          Hiranyaksha, performed severe penance and won an extraordinary boon from Brahma: he could
+          be killed neither by man nor beast, neither by day nor by night, neither inside a dwelling
+          nor outside, neither on the earth nor in the sky, and by no weapon. Armored by this boon,
+          he declared himself god of all the worlds and forbade the very name of Hari in his kingdom.</p>
+        <p data-lang="te" lang="te" hidden>శ్రీ మహావిష్ణువు నాల్గవ అవతారమైన నరసింహస్వామి కథ
+          శ్రీమద్భాగవతం సప్తమ స్కంధంలో చెప్పబడింది. వరాహావతారంలో స్వామి తన సోదరుడు హిరణ్యాక్షుణ్ని
+          సంహరించడంతో విష్ణువుపై పగ పెంచుకున్న రాక్షసరాజు హిరణ్యకశిపుడు ఘోర తపస్సు చేసి బ్రహ్మదేవుని
+          నుంచి అసాధారణమైన వరం పొందాడు: తనను నరుడు గానీ, మృగం గానీ చంపలేరు; పగలు గానీ, రాత్రి గానీ
+          కాదు; ఇంటి లోపల గానీ, బయట గానీ కాదు; భూమిపైన గానీ, ఆకాశంలో గానీ కాదు; ఏ ఆయుధంతోనూ కాదు.
+          ఈ వరబలంతో తానే సర్వలోకాలకు దేవుడినని ప్రకటించుకొని, తన రాజ్యంలో హరినామాన్నే నిషేధించాడు.</p>
+
+        <p data-lang="en">Yet in his own palace was born the greatest of devotees — his son
+          Prahlada, who from the womb itself was devoted to Sri Hari. Neither the threats of his
+          teachers nor the tortures of his father — poison, fire, trampling by elephants, being
+          hurled from cliffs — could shake the child's faith, for the Lord protected him in every
+          trial. Enraged, Hiranyakashipu finally roared, "If your Hari is everywhere, is he in this
+          pillar?" "He is," replied Prahlada calmly. When the king struck the pillar with his mace,
+          it split open with a thunderous roar, and the Lord emerged in a form never seen before —
+          Narasimha, half man and half lion, honouring every word of Brahma's boon. At twilight
+          (neither day nor night), on the threshold of the court (neither inside nor outside),
+          placing the demon on His lap (neither earth nor sky), the Lord, who was neither man nor
+          beast, tore Hiranyakashipu apart with His nails, which were no weapons.</p>
+        <p data-lang="te" lang="te" hidden>అయితే అతని ఇంటనే భక్తశిఖామణి ప్రహ్లాదుడు జన్మించాడు —
+          గర్భంలో ఉండగానే శ్రీహరిపై భక్తి నిండిన బాలుడు. గురువుల బెదిరింపులు గానీ, తండ్రి పెట్టిన
+          హింసలు గానీ — విషం, అగ్ని, ఏనుగులతో తొక్కించడం, కొండలపై నుంచి పడవేయడం — ఆ బాలుని
+          విశ్వాసాన్ని కదిలించలేకపోయాయి; ప్రతి పరీక్షలోనూ స్వామి అతణ్ని కాపాడాడు. క్రోధంతో
+          హిరణ్యకశిపుడు "నీ హరి సర్వవ్యాపి అయితే, ఈ స్తంభంలో ఉన్నాడా?" అని గర్జించాడు. "ఉన్నాడు"
+          అని ప్రహ్లాదుడు ప్రశాంతంగా జవాబిచ్చాడు. రాజు గదతో స్తంభాన్ని కొట్టగానే అది భయంకర ధ్వనితో
+          పగిలింది; ఇంతవరకు ఎవ్వరూ చూడని రూపంలో స్వామి ఆవిర్భవించాడు — సగం నరుడు, సగం సింహం అయిన
+          నరసింహుడు, బ్రహ్మ వరంలోని ప్రతి మాటను నిలబెడుతూ. సంధ్యా సమయంలో (పగలు కాదు, రాత్రి కాదు),
+          సభా ద్వారపు గడపపై (లోపల కాదు, బయట కాదు), రాక్షసుణ్ని తన తొడపై పరుండబెట్టి (భూమి కాదు,
+          ఆకాశం కాదు), నరుడూ మృగమూ కాని ఆ స్వామి, ఆయుధాలు కాని తన గోళ్లతో హిరణ్యకశిపుణ్ని
+          సంహరించాడు.</p>
+      </div>
+
+      <!-- Karavalamba (verse 1) — the About page's fixed pull-quote placement (STYLEGUIDE §6.7) -->
+      <div class="divider divider--tight" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+      <blockquote class="sloka">
+        <p class="sloka__sa" lang="sa">श्रीमत्पयोनिधिनिकेतन चक्रपाणे भोगीन्द्रभोगमणिराजितपुण्यमूर्ते ।<br>
+        योगीश शाश्वत शरण्य भवाब्धिपोत लक्ष्मीनृसिंह मम देहि करावलम्बम् ॥</p>
+        <span class="sloka__tr" lang="en">O Lord of yogis, eternal refuge, the boat across the ocean
+        of worldly existence — O Lakshmi Narasimha, give me the support of Your hand.</span>
+      </blockquote>
+      <div class="divider divider--tight" role="presentation"><img src="assets/divider.svg" alt="" width="240" height="24"></div>
+
+      <div class="measure flow">
+        <p data-lang="en">Even after the demon fell, the Lord's fury blazed on, and none of the
+          devas dared approach Him — until the child Prahlada walked up fearlessly and offered
+          prayers at His feet, and Goddess Lakshmi Devi came and seated Herself beside the Lord.
+          Soothed by Her presence and by Prahlada's devotion, the Ugra (fierce) Narasimha became
+          Shanta (peaceful) — Lakshmi Narasimha, the form in which He is worshipped in this temple.
+          With Amma Lakshmi Devi on His lap, the Lord who destroyed evil for the sake of one
+          devotee's faith sits here as the compassionate protector of all who call on Him, granting
+          courage, health and freedom from fear.</p>
+        <p data-lang="te" lang="te" hidden>రాక్షసుడు పడిపోయిన తర్వాత కూడా స్వామివారి ఉగ్రత
+          చల్లారలేదు; దేవతలెవ్వరూ ఆయన దరిదాపులకు వెళ్లే సాహసం చేయలేకపోయారు. అప్పుడు బాలప్రహ్లాదుడు
+          నిర్భయంగా వెళ్లి స్వామి పాదాల చెంత ప్రార్థించాడు; లక్ష్మీదేవి అమ్మవారు వచ్చి స్వామివారి
+          పక్కన ఆసీనురాలయ్యింది. అమ్మవారి సాన్నిధ్యంతో, ప్రహ్లాదుని భక్తితో ఉగ్ర నరసింహుడు శాంత
+          నరసింహుడయ్యాడు — ఈ ఆలయంలో పూజలందుకునే లక్ష్మీ నరసింహ రూపం అదే. ఒడిలో అమ్మ లక్ష్మీదేవితో,
+          ఒక్క భక్తుని విశ్వాసం కోసం దుష్టసంహారం చేసిన స్వామి, తనను తలచిన వారందరికీ ధైర్యం, ఆరోగ్యం,
+          భయవిముక్తి ప్రసాదించే కరుణామయ రక్షకుడిగా ఇక్కడ కొలువై ఉన్నాడు.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation">
+    <img src="assets/divider.svg" alt="" width="240" height="24">
+  </div>
+
+  <!-- ======================================================================
+       03 · UGRA TO SHANTA — why the Lakshmi Narasimha form is compassionate
+       ====================================================================== -->
+  <section class="section" aria-labelledby="shanta-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker"><span class="kicker__num">03</span> · <span lang="te">శాంత స్వరూపం</span> — Ugra to Shanta</span>
+        <h2 class="section__title" id="shanta-title" data-en="From Ugra to Shanta" data-te="శాంత స్వరూపం">From Ugra to Shanta</h2>
+        <span class="section__sub" lang="te">శాంత స్వరూపం</span>
+      </div>
+
+      <div class="measure flow">
+        <p data-lang="en">Narasimha is the avatara of divine fury — the Lord who burst from a
+          pillar because a child's faith was questioned. In that moment He was Ugra Narasimha,
+          fierce beyond even the courage of the devas. The tradition holds that only two things
+          could calm that fury: the fearless devotion of Prahlada, and the presence of Sri Maha
+          Lakshmi.</p>
+        <p data-lang="te" lang="te" hidden>నరసింహావతారం దైవిక ఆగ్రహ స్వరూపం — ఒక బాలుని విశ్వాసాన్ని
+          ప్రశ్నించినందుకు స్తంభం నుంచి ఆవిర్భవించిన స్వామి. ఆ క్షణంలో ఆయన ఉగ్ర నరసింహుడు —
+          దేవతలకే భయం కలిగించిన ఉగ్రత అది. ఆ ఉగ్రతను శాంతింపజేయగలిగినవి రెండే అని సంప్రదాయం
+          చెబుతుంది: ప్రహ్లాదుని నిర్భయ భక్తి, శ్రీ మహాలక్ష్మి సాన్నిధ్యం.</p>
+
+        <p data-lang="en">That is why the form worshipped here matters so much. With Amma Lakshmi
+          Devi seated on His lap, the Lord is Shanta — peaceful, gracious, ready to bless. Devotees
+          of Lakshmi Narasimha say that the Mother's presence is the guarantee of the Father's
+          compassion: prayers reach Him through Her, and the Lord who was once too fierce for the
+          devas to approach becomes the easiest of all to call upon. He remains the destroyer of
+          fear — but at a Lakshmi Narasimha kshetram His ferocity faces outward, toward whatever
+          threatens His devotees, and never toward those who seek Him.</p>
+        <p data-lang="te" lang="te" hidden>అందుకే ఇక్కడ పూజలందుకునే రూపానికి ఇంత ప్రత్యేకత. ఒడిలో
+          అమ్మ లక్ష్మీదేవి ఆసీనురాలై ఉండగా స్వామి శాంత స్వరూపుడు — ప్రసన్నుడు, వరదుడు. అమ్మవారి
+          సాన్నిధ్యమే స్వామివారి కరుణకు హామీ అని లక్ష్మీ నరసింహ భక్తులు చెబుతారు: ప్రార్థనలు అమ్మ
+          ద్వారా స్వామిని చేరుతాయి; ఒకప్పుడు దేవతలకే సమీపించలేని ఉగ్రమూర్తి, భక్తులకు అందరికంటే
+          సులభుడైన దైవం అవుతాడు. భయాన్ని పోగొట్టే స్వామి ఉగ్రత భక్తుల వైపు కాదు — భక్తులను బాధించే
+          వాటిపైనే.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation">
+    <img src="assets/divider.svg" alt="" width="240" height="24">
+  </div>
+
+  <!-- ======================================================================
+       04 · THE TEMPLE — garbhagudi, utsava murti, dhwaja sthambham
+       ====================================================================== -->
+  <section class="section" aria-labelledby="temple-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker"><span class="kicker__num">04</span> · <span lang="te">దేవాలయం</span> — The Temple</span>
+        <h2 class="section__title" id="temple-title" data-en="The Temple" data-te="దేవాలయం">The Temple</h2>
+        <span class="section__sub" lang="te">దేవాలయం</span>
+      </div>
+
+      <div class="measure flow">
+        <p data-lang="en">Like the Lakshmi Narasimha temples of the Telugu country, the life of
+          this temple centres on its garbhagudi — the sanctum where the Lord receives His daily
+          worship from suprabhatam to kavata bandhanam. The description below is kept deliberately
+          general until the temple committee confirms the details of this temple's own vigrahas
+          and structures.</p>
+        <p data-lang="te" lang="te" hidden>తెలుగునాట లక్ష్మీ నరసింహ దేవాలయాల మాదిరిగానే, ఈ ఆలయ
+          జీవితం గర్భగుడి చుట్టూనే నడుస్తుంది — సుప్రభాతం నుంచి కవాట బంధనం వరకు స్వామివారు నిత్య
+          పూజలందుకునే గర్భాలయం అది. ఈ ఆలయపు విగ్రహాలు, కట్టడాల వివరాలను ఆలయ కమిటీ ధృవీకరించే వరకు,
+          కింది వర్ణన ఉద్దేశపూర్వకంగా సాధారణంగా ఉంచబడింది.</p>
+      </div>
+
+      <!-- EDIT-ME: The three entries below are generic temple-tradition descriptions, NOT
+           verified details of this temple. For each entry, replace the dashed-underline
+           placeholder sentence (in BOTH the English and Telugu list items) with the real
+           details confirmed by the committee: the moolavirat's form and history, the utsava
+           murti, and the dhwaja sthambham. Delete any entry that does not apply. -->
+      <ul class="diya-list measure">
+        <li data-lang="en"><strong>Garbhagudi · <span lang="te">గర్భగుడి</span></strong> — the sanctum
+          sanctorum, where the moolavirat of Sri Lakshmi Narasimha Swamy is worshipped with daily
+          abhishekam, alankarana and harathi.
+          <span class="placeholder">Details of the moolavirat — form, posture and history — to be
+          confirmed by the temple committee.</span></li>
+        <li data-lang="te" lang="te" hidden><strong>గర్భగుడి</strong> — మూలవిరాట్టు అయిన శ్రీ లక్ష్మీ
+          నరసింహ స్వామివారు నిత్య అభిషేకం, అలంకరణ, హారతులతో పూజలందుకునే గర్భాలయం.
+          <span class="placeholder">మూలవిరాట్టు రూపం, భంగిమ, చరిత్ర వివరాలను ఆలయ కమిటీ
+          ధృవీకరించాలి.</span></li>
+
+        <li data-lang="en"><strong>Utsava murti · <span lang="te">ఉత్సవ మూర్తి</span></strong> — the
+          processional form of the Lord, brought out for Kalyanotsavam and the annual utsavams,
+          when the Swamy leaves the sanctum to move among His devotees.
+          <span class="placeholder">Details of this temple's utsava murti to be confirmed by the
+          temple committee.</span></li>
+        <li data-lang="te" lang="te" hidden><strong>ఉత్సవ మూర్తి</strong> — కల్యాణోత్సవం, వార్షిక
+          ఉత్సవాల వేళ గర్భగుడి నుంచి బయటకు వేంచేసి భక్తుల మధ్యకు వచ్చే స్వామివారి ఉత్సవ రూపం.
+          <span class="placeholder">ఈ ఆలయ ఉత్సవ మూర్తి వివరాలను ఆలయ కమిటీ ధృవీకరించాలి.</span></li>
+
+        <li data-lang="en"><strong>Dhwaja sthambham · <span lang="te">ధ్వజ స్తంభం</span></strong> — the
+          flag pillar that stands before the sanctum in temple tradition; Dhwajarohanam, the raising
+          of the flag upon it, opens the annual Brahmotsavam.
+          <span class="placeholder">Details of this temple's dhwaja sthambham to be confirmed by the
+          temple committee.</span></li>
+        <li data-lang="te" lang="te" hidden><strong>ధ్వజ స్తంభం</strong> — ఆలయ సంప్రదాయంలో గర్భగుడి
+          ఎదుట నిలిచే ధ్వజ స్తంభం; దీనిపై జరిగే ధ్వజారోహణంతో వార్షిక బ్రహ్మోత్సవం ప్రారంభమవుతుంది.
+          <span class="placeholder">ఈ ఆలయ ధ్వజ స్తంభం వివరాలను ఆలయ కమిటీ ధృవీకరించాలి.</span></li>
+      </ul>
+
+      <div class="measure flow">
+        <p>
+          <a class="btn btn--ghost" href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a>
+          <a class="btn btn--ghost" href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" role="presentation">
+    <img src="assets/divider.svg" alt="" width="240" height="24">
+  </div>
+
+  <!-- ======================================================================
+       05 · SLOKAS & STOTRAS — the three slokas of the site, in full
+       ====================================================================== -->
+  <section class="section" aria-labelledby="slokas-title">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="kicker"><span class="kicker__num">05</span> · <span lang="te">శ్లోకాలు, స్తోత్రాలు</span> — Slokas &amp; Stotras</span>
+        <h2 class="section__title" id="slokas-title" data-en="Slokas &amp; Stotras" data-te="శ్లోకాలు, స్తోత్రాలు">Slokas &amp; Stotras</h2>
+        <span class="section__sub" lang="te">శ్లోకాలు, స్తోత్రాలు</span>
+      </div>
+
+      <div class="measure flow">
+        <p data-lang="en">Three slokas run through the tradition of every Narasimha kshetram — and
+          through this website: the Ugram Viram maha-mantra, the Narasimha Gayatri, and the opening
+          verse of the Karavalamba Stotram. They are given here in full, with their meanings.</p>
+        <p data-lang="te" lang="te" hidden>ప్రతి నరసింహ క్షేత్ర సంప్రదాయంలో — ఈ వెబ్‌సైట్‌లో కూడా —
+          మూడు శ్లోకాలు వినిపిస్తాయి: ఉగ్రం వీరం మహామంత్రం, నరసింహ గాయత్రి, కరావలంబ స్తోత్రం మొదటి
+          శ్లోకం. వాటి పూర్తి పాఠం, భావం ఇక్కడ ఇవ్వబడ్డాయి.</p>
+      </div>
+
+      <h3 class="center" data-en="Sri Narasimha Maha-Mantra (Ugram Viram)" data-te="శ్రీ నరసింహ మహామంత్రం (ఉగ్రం వీరం)">Sri Narasimha Maha-Mantra (Ugram Viram)</h3>
+      <blockquote class="sloka">
+        <p class="sloka__sa" lang="sa">ॐ उग्रं वीरं महाविष्णुं ज्वलन्तं सर्वतोमुखम् ।<br>
+        नृसिंहं भीषणं भद्रं मृत्योर्मृत्युं नमाम्यहम् ॥</p>
+        <span class="sloka__tr" lang="en">Om. I bow to Lord Narasimha, the fierce and heroic Maha
+        Vishnu, blazing with radiance and facing all directions; terrifying to evil yet supremely
+        auspicious, He is the death of death itself. (Chanted for protection and freedom from fear.)</span>
+      </blockquote>
+
+      <h3 class="center" data-en="Sri Narasimha Gayatri" data-te="శ్రీ నరసింహ గాయత్రి">Sri Narasimha Gayatri</h3>
+      <blockquote class="sloka">
+        <p class="sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>
+        तन्नो नारसिंहः प्रचोदयात् ॥</p>
+        <span class="sloka__tr" lang="en">Om. May we know the Lord of adamantine (thunderbolt-like)
+        nails; may we meditate on Him of sharp fangs. May that Lord Narasimha illumine and impel
+        our intellect.</span>
+      </blockquote>
+
+      <h3 class="center" data-en="Sri Lakshmi Narasimha Karavalamba Stotram — Opening Verse" data-te="శ్రీ లక్ష్మీనృసింహ కరావలంబ స్తోత్రం — మొదటి శ్లోకం">Sri Lakshmi Narasimha Karavalamba Stotram — Opening Verse</h3>
+      <p class="small muted center" data-en="Attributed to Adi Shankaracharya" data-te="ఆదిశంకరాచార్య విరచితం">Attributed to Adi Shankaracharya</p>
+      <blockquote class="sloka">
+        <p class="sloka__sa" lang="sa">श्रीमत्पयोनिधिनिकेतन चक्रपाणे भोगीन्द्रभोगमणिराजितपुण्यमूर्ते ।<br>
+        योगीश शाश्वत शरण्य भवाब्धिपोत लक्ष्मीनृसिंह मम देहि करावलम्बम् ॥</p>
+        <span class="sloka__tr" lang="en">O Lord who dwells in the Ocean of Milk, bearer of the
+        discus, whose holy form is adorned by the gems on the hoods of Adisesha; Lord of yogis,
+        eternal refuge, the boat that carries us across the ocean of worldly existence — O Lakshmi
+        Narasimha, give me the support of Your hand.</span>
+      </blockquote>
+
+      <div class="measure flow">
+        <p data-lang="en">The Karavalamba verse opens the Sri Lakshmi Nrusimha Karavalamba Stotram,
+          attributed to Adi Shankaracharya. Every verse of the stotram ends with the same plea —
+          "Lakshmi Nrusimha, mama dehi karavalambam: give me the support of Your hand." Devotees
+          across the Telugu lands recite it in times of illness, fear and hardship, asking the Lord
+          who once reached out of a pillar for one devotee to reach out His hand once more.</p>
+        <p data-lang="te" lang="te" hidden>కరావలంబ శ్లోకం, ఆదిశంకరాచార్యులు రచించినదిగా చెప్పబడే
+          శ్రీ లక్ష్మీనృసింహ కరావలంబ స్తోత్రానికి మొదటి శ్లోకం. స్తోత్రంలోని ప్రతి శ్లోకం ఒకే
+          ప్రార్థనతో ముగుస్తుంది — "లక్ష్మీనృసింహ మమ దేహి కరావలంబం: నీ చేయూతను నాకు ప్రసాదించు."
+          అనారోగ్యం, భయం, కష్టాల వేళ తెలుగునాట భక్తులు ఈ స్తోత్రాన్ని పారాయణ చేస్తారు — ఒక భక్తుని
+          కోసం స్తంభం నుంచి చేయి చాచిన స్వామిని, మరోసారి చేయూతనివ్వమని వేడుకుంటూ.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================================================================
+     CANONICAL FOOTER — Sri Lakshmi Narasimha Swamy Temple, Bhairkhanpally
+     Copy this file's contents VERBATIM as the last thing inside <body>
+     on every page (after </main>). Do not restyle or restructure it.
+     It ends with the shared <script src="js/main.js" defer> tag — include
+     that script ONCE per page; copying this footer already does it.
+     ======================================================================== -->
+
+<!-- Village skyline over the ember horizon: the footer's top edge -->
+<svg class="footer-skyline" viewBox="0 0 1600 110" preserveAspectRatio="xMidYMax meet" aria-hidden="true" focusable="false">
+  <g fill="#241014">
+    <!-- compound walls with lotus-bud coping -->
+    <path d="M0 92 H93 q5 -7 10 0 H293 q5 -7 10 0 H493 q5 -7 10 0 H693 q5 -7 10 0 H744 V110 H0 Z"/>
+    <path d="M856 92 H907 q5 -7 10 0 H1107 q5 -7 10 0 H1307 q5 -7 10 0 H1507 q5 -7 10 0 H1600 V110 H856 Z"/>
+    <!-- miniature stepped gopuram -->
+    <path d="M756 110 L763 72 L775 72 L781 48 L791 48 L795 30 C796 21 798 18 800 18 C802 18 804 21 805 30 L809 48 L819 48 L825 72 L837 72 L844 110 Z"/>
+    <!-- neem trees -->
+    <rect x="297" y="84" width="6" height="26"/>
+    <circle cx="300" cy="72" r="20"/>
+    <circle cx="285" cy="80" r="14"/>
+    <circle cx="316" cy="79" r="15"/>
+    <rect x="517" y="92" width="5" height="18"/>
+    <circle cx="520" cy="82" r="14"/>
+    <circle cx="509" cy="88" r="10"/>
+    <circle cx="532" cy="87" r="11"/>
+    <rect x="1237" y="84" width="6" height="26"/>
+    <circle cx="1240" cy="72" r="19"/>
+    <circle cx="1226" cy="80" r="13"/>
+    <circle cx="1255" cy="79" r="14"/>
+    <!-- village house -->
+    <path d="M1025 88 L1052 74 L1080 88 V110 H1025 Z"/>
+  </g>
+  <!-- gold kalasham tip on the gopuram -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.4" stroke-linecap="round">
+    <path d="M800 16 V12"/>
+    <circle cx="800" cy="9" r="2.2"/>
+  </g>
+  <!-- the 1px ember horizon line -->
+  <rect x="0" y="108.5" width="1600" height="1.5" fill="#B85C24" opacity=".85"/>
+</svg>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+
+      <!-- Column 1 · seal + about + address -->
+      <div class="footer-col">
+        <p class="footer-seal">
+          <img src="assets/emblem.svg" alt="" width="38" height="38">
+          <span>
+            <span class="footer-seal__te" lang="te">శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం</span>
+            <span class="footer-seal__en" lang="en">Bhairkhanpally Grama Devalayam</span>
+          </span>
+        </p>
+        <!-- EDIT-ME: Confirm the Telugu spelling of the village name (భైర్ఖాన్‌పల్లి)
+             with the temple committee before publishing. -->
+        <p class="footer-about" data-lang="en">The village temple (grama devalayam) of Bhairkhanpally,
+          where Sri Lakshmi Narasimha Swamy — the Lord in His peaceful form with Sri Lakshmi Devi —
+          is worshipped. Bhairkhanpally lies in Keshampet mandal, Ranga Reddy district, Telangana.</p>
+        <p class="footer-about" data-lang="te" lang="te" hidden>భైర్ఖాన్‌పల్లి గ్రామ దేవాలయం —
+          శ్రీ లక్ష్మీ దేవి సమేతంగా శాంత స్వరూపుడైన శ్రీ లక్ష్మీ నరసింహ స్వామివారు ఇక్కడ కొలువై ఉన్నారు.
+          భైర్ఖాన్‌పల్లి కేశంపేట మండలం, రంగారెడ్డి జిల్లా, తెలంగాణలో ఉంది.</p>
+        <address class="footer-address">
+          <span data-en="Sri Lakshmi Narasimha Swamy Temple" data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయం">Sri Lakshmi Narasimha Swamy Temple</span><br>
+          <span data-en="Bhairkhanpally village, Keshampet mandal," data-te="భైర్ఖాన్‌పల్లి గ్రామం, కేశంపేట మండలం,">Bhairkhanpally village, Keshampet mandal,</span><br>
+          <span data-en="Ranga Reddy district, Telangana — 509408" data-te="రంగారెడ్డి జిల్లా, తెలంగాణ — 509408">Ranga Reddy district, Telangana — 509408</span>
+        </address>
+      </div>
+
+      <!-- Column 2 · quick links -->
+      <nav class="footer-col" aria-label="Footer">
+        <h2 class="footer-col__title" data-en="Quick Links" data-te="త్వరిత లింకులు">Quick Links</h2>
+        <ul class="footer-links">
+          <li><a href="index.html" data-en="Home" data-te="హోమ్">Home</a></li>
+          <li><a href="about.html" data-en="About the Temple" data-te="ఆలయ చరిత్ర">About the Temple</a></li>
+          <li><a href="timings.html" data-en="Darshan Timings" data-te="దర్శన వేళలు">Darshan Timings</a></li>
+          <li><a href="sevas.html" data-en="Sevas &amp; Poojas" data-te="సేవలు">Sevas &amp; Poojas</a></li>
+          <li><a href="festivals.html" data-en="Festivals" data-te="ఉత్సవాలు">Festivals</a></li>
+          <li><a href="donations.html" data-en="Donations" data-te="విరాళాలు">Donations</a></li>
+          <li><a href="gallery.html" data-en="Gallery" data-te="ఫోటో గ్యాలరీ">Gallery</a></li>
+          <li><a href="visit.html" data-en="Plan Your Visit" data-te="దర్శనం">Plan Your Visit</a></li>
+        </ul>
+      </nav>
+
+      <!-- Column 3 · darshan hours summary -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Darshan Hours" data-te="దర్శన వేళలు">Darshan Hours</h2>
+        <!-- EDIT-ME: These hours follow the daily schedule used across the site
+             (modeled on Yadadri/Mattapalli practice). Adjust once the committee
+             confirms this temple's actual timings — and keep timings.html in sync. -->
+        <ul class="footer-hours">
+          <li><span data-en="Morning:" data-te="ఉదయం:">Morning:</span> <span class="tnum">6:00 AM – 12:00 noon</span></li>
+          <li><span data-en="Evening:" data-te="సాయంత్రం:">Evening:</span> <span class="tnum">5:00 PM – 8:00 PM</span></li>
+        </ul>
+        <p><a href="timings.html" data-en="Full ritual schedule →" data-te="పూర్తి పూజా క్రమం →">Full ritual schedule →</a></p>
+      </div>
+
+      <!-- Column 4 · contact -->
+      <div class="footer-col">
+        <h2 class="footer-col__title" data-en="Contact" data-te="సంప్రదించండి">Contact</h2>
+        <ul class="footer-phones">
+          <!-- EDIT-ME: Replace +91XXXXXXXXXX in each href AND each visible number
+               with real numbers (href format: tel:+91 then 10 digits, no spaces). -->
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple priest:" data-te="అర్చకులు:">Temple priest:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <li>
+            <a class="footer-phone" href="tel:+91XXXXXXXXXX">
+              <span class="footer-phone__label" data-en="Temple committee:" data-te="ఆలయ కమిటీ:">Temple committee:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+          <!-- EDIT-ME: Replace 91XXXXXXXXXX with the WhatsApp number (country code 91
+               + 10 digits, no plus sign, no spaces). The message text is pre-filled. -->
+          <li>
+            <a class="footer-phone" href="https://wa.me/91XXXXXXXXXX?text=Namaskaram%2C%20I%20want%20to%20know%20about%20sevas%20at%20Sri%20Lakshmi%20Narasimha%20Swamy%20Temple%2C%20Bhairkhanpally.">
+              <svg class="wa-glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path fill="#25D366" d="M16 3C9.4 3 4 8.3 4 14.9c0 2.6.8 5 2.3 7L4 29l7.3-2.2c1.9 1 3.9 1.5 4.7 1.5 6.6 0 12-5.3 12-11.9S22.6 3 16 3zm5.9 16.9c-.3.8-1.7 1.6-2.4 1.6-.6.1-1.4.1-2.2-.2-.5-.2-1.2-.4-2-.8-3.6-1.5-5.9-5.2-6.1-5.4-.2-.2-1.5-1.9-1.5-3.7 0-1.8 1-2.7 1.3-3 .3-.4.7-.4 1-.4h.7c.2 0 .5-.1.8.6.3.8 1 2.7 1.1 2.9.1.2.2.4 0 .7-.1.3-.2.4-.4.7l-.6.7c-.2.2-.4.4-.2.8.2.4 1 1.7 2.2 2.7 1.5 1.4 2.8 1.8 3.2 2 .4.2.6.2.9-.1.2-.3 1-1.2 1.3-1.6.3-.4.5-.3.9-.2.4.1 2.2 1 2.6 1.2.4.2.6.3.7.5.1.2.1.9-.2 1.7z"/></svg>
+              <span class="footer-phone__label" data-en="WhatsApp:" data-te="వాట్సాప్:">WhatsApp:</span>
+              <span class="placeholder">+91 XXXXX XXXXX</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Sri Narasimha Gayatri — the footer's sloka (one placement, per spec) -->
+    <div class="footer-sloka">
+      <p class="footer-sloka__sa" lang="sa">ॐ वज्रनखाय विद्महे तीक्ष्णदंष्ट्राय धीमहि ।<br>तन्नो नारसिंहः प्रचोदयात् ॥</p>
+      <span class="footer-sloka__tr" lang="en">May we know the Lord of adamantine nails; may we meditate on Him of sharp fangs.
+        May that Lord Narasimha illumine our intellect.</span>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© <span data-year>2026</span>
+        <span data-en="Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved."
+              data-te="శ్రీ లక్ష్మీ నరసింహ స్వామి దేవాలయ కమిటీ, భైర్ఖాన్‌పల్లి (గ్రామ దేవాలయం). సర్వ హక్కులు కమిటీవే.">Sri Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally (Grama Devalayam). All rights reserved.</span></p>
+      <p class="small"
+         data-en="Seva, timing and festival details on this site are maintained by the temple committee."
+         data-te="ఈ సైట్‌లోని సేవలు, దర్శన వేళలు, ఉత్సవ వివరాలు ఆలయ కమిటీ నిర్వహణలో ఉంటాయి.">Seva, timing and festival details on this site are maintained by the temple committee.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Shared script — one per page, last thing before </body>. -->
+<script src="js/main.js" defer></script>
+
+</body>
+</html>

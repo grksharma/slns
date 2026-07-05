@@ -4,4 +4,4 @@ Allow: /
 
 # Set to this repo's default GitHub Pages address. EDIT-ME: update if you attach a
 # custom domain later (must match the base URL used in sitemap.xml).
-Sitemap: https://grksharma.github.io/bkp-temple-website/sitemap.xml
+Sitemap: https://grksharma.github.io/slns/sitemap.xml

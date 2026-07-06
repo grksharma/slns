@@ -59,7 +59,7 @@ robots.txt        For search engines.
 - ✅ The deity's proper name — **Sri Guntuka Lakshmi Narasimha Swamy** (శ్రీ గుంటుక లక్ష్మీ
   నరసింహ స్వామి) — used across every page, with the meaning of "Guntuka" explained.
 - ✅ The temple's **founding story / sthala puranam** (the ~312-year-old swayambhu stone,
-  the farmer Sayinni Narsayya, the dream of Karmam Ramayya Pantulu, the Gannoju family) —
+  the farmer Sayinni Narsayya, the dream of Karnam Ramayya Pantulu, the Gannoju family) —
   on the About page, in English and Telugu.
 - ✅ The **moolavirat** description (swayambhu; the stone grew to fill the sanctum).
 - ✅ **Phone numbers** — Archakulu Gorenta Narasimha Sharma (89781 72136), Sarpanch / committee

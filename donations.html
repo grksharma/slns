@@ -64,7 +64,12 @@
     }
     .qr-card__arch { width: min(230px, 82%); margin: 0 auto var(--space-3); }
     .qr-card__frame { width: min(200px, 100%); margin: 0 auto var(--space-4); }
+    .qr-card__qr { display: block; width: min(260px, 92%); margin: 0 auto var(--space-4);
+      padding: var(--space-2); background: #FFFDF6; border: 1px solid var(--gold);
+      border-radius: var(--radius-card); }
     .qr-card__row { font-size: .9375rem; margin-bottom: var(--space-2); }
+    .upi-id { font-family: ui-monospace, 'SF Mono', Menlo, monospace; font-size: .8125rem;
+      word-break: break-all; color: var(--maroon); }
     .qr-card__note { font-size: .8125rem; color: var(--ink-soft); margin-top: var(--space-3); }
 
     .trust-note {
@@ -289,15 +294,13 @@
         </div>
 
         <div class="measure">
-          <p data-lang="en">The e-Hundi lets you make an offering from anywhere. The temple's
-            donation account — published in the temple's 2026 Brahmotsavam invitation — is shown
-            below; you can give by bank transfer or UPI. You may also scan the UPI QR displayed at
-            the temple, or ask for it on the temple cell. Every offering supports the Lord's daily
+          <p data-lang="en">The e-Hundi lets you make an offering from anywhere. Scan the UPI QR
+            below with any UPI app, or give by bank transfer using the account details beside it.
+            Both reach the temple's own donation account. Every offering supports the Lord's daily
             worship and the upkeep of the shrine.</p>
           <p data-lang="te" lang="te" hidden>ఈ-హుండీ ద్వారా మీరు ఎక్కడి నుంచైనా కానుక సమర్పించవచ్చు.
-            ఆలయ విరాళాల ఖాతా వివరాలు — 2026 బ్రహ్మోత్సవ ఆహ్వాన పత్రికలో ప్రచురించినవి — కింద
-            ఇవ్వబడ్డాయి; మీరు బ్యాంకు బదిలీ లేదా UPI ద్వారా విరాళం ఇవ్వవచ్చు. ఆలయంలో ప్రదర్శించిన
-            UPI QR ను స్కాన్ చేయవచ్చు, లేదా ఆలయ సెల్‌లో అడగవచ్చు. ప్రతి కానుక స్వామివారి నిత్య
+            కింది UPI QR ను ఏ UPI యాప్‌తోనైనా స్కాన్ చేయండి, లేదా పక్కన ఇచ్చిన ఖాతా వివరాలతో
+            బ్యాంకు బదిలీ చేయండి. రెండూ ఆలయ విరాళాల ఖాతాకే చేరుతాయి. ప్రతి కానుక స్వామివారి నిత్య
             పూజలకు, ఆలయ నిర్వహణకు తోడ్పడుతుంది.</p>
         </div>
 
@@ -329,43 +332,20 @@
               <path d="M176 24 C177.8 20.2 177.8 17.2 176 13.8 C174.2 17.2 174.2 20.2 176 24 Z" fill="#E8A13D"/>
             </svg>
 
-            <!-- EDIT-ME: When the committee's UPI account is ready, replace the
-                 placeholder frame below with the REAL UPI QR image saved locally,
-                 e.g. <img src="assets/upi-qr.png" alt="UPI QR code for donations to
-                 the Sri Guntuka Lakshmi Narasimha Swamy Temple Committee, Bhairkhanpally"
-                 width="200" height="200">, and fill in the UPI ID and account-holder
-                 name below it. NEVER publish the QR without the account holder's
-                 registered name, bank name and committee identity beside it. -->
-            <svg class="qr-card__frame" viewBox="0 0 220 220" role="img" aria-labelledby="qr-ph-title qr-ph-desc">
-              <title id="qr-ph-title">UPI QR placeholder</title>
-              <desc id="qr-ph-desc">Reserved frame for the temple committee's UPI QR code — not yet published.</desc>
-              <defs>
-                <linearGradient id="brass-frame" x1="0" y1="0" x2="220" y2="220" gradientUnits="userSpaceOnUse">
-                  <stop offset="0" stop-color="#E9C46A"/>
-                  <stop offset="1" stop-color="#C9A227"/>
-                </linearGradient>
-              </defs>
-              <rect x="3" y="3" width="214" height="214" rx="12" fill="none" stroke="url(#brass-frame)" stroke-width="1.5"/>
-              <rect x="14" y="14" width="192" height="192" rx="7" fill="none" stroke="#C9A227" stroke-opacity=".45" stroke-width="1" stroke-dasharray="4 7"/>
-              <g fill="none" stroke="url(#brass-frame)" stroke-width="1.5" stroke-linecap="round">
-                <path d="M32 46 V32 H46"/>
-                <path d="M174 32 H188 V46"/>
-                <path d="M188 174 V188 H174"/>
-                <path d="M46 188 H32 V174"/>
-              </g>
-              <text x="110" y="104" text-anchor="middle" font-family="Mulish, 'Segoe UI', sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#6B5D4F">UPI QR</text>
-              <text x="110" y="126" text-anchor="middle" font-family="Mulish, 'Segoe UI', sans-serif" font-size="12" fill="#6B5D4F">— at the temple —</text>
-            </svg>
+            <!-- Real UPI QR generated from the temple's VERIFIED UPI ID
+                 (laxminarsimhaswamyrisrisri@sbi) — confirmed by a successful payment whose payee
+                 showed as "Sri Sri Sri Laxmi Narsimha Swamy Devalaya". The QR encodes
+                 upi://pay?pa=laxminarsimhaswamyrisrisri@sbi&cu=INR. The UPI ID and payee name are
+                 printed beside it so donors can verify the name their app shows before paying. -->
+            <img class="qr-card__qr" src="assets/upi-qr.svg" width="240" height="240"
+                 alt="UPI QR code — scan with any UPI app to pay Sri Sri Sri Laxmi Narsimha Swamy Devalaya at laxminarsimhaswamyrisrisri@sbi">
 
-            <!-- The temple's UPI QR (shown at the temple and printed in the 2026 invitation) is not
-                 reproduced here, so no wrong code can be scanned. Pay via the Bank Transfer details,
-                 or ask for the QR on the temple cell. -->
-            <p class="qr-card__row"><strong data-en="Temple cell:" data-te="ఆలయ సెల్:">Temple cell:</strong> <a href="tel:+919618054672">+91 96180 54672</a></p>
-            <p class="qr-card__row" data-en="Ask for the UPI QR, or use the bank transfer details." data-te="UPI QR కోసం అడగండి, లేదా బ్యాంకు బదిలీ వివరాలు వాడండి.">Ask for the UPI QR, or use the bank transfer details.</p>
+            <p class="qr-card__row"><strong data-en="UPI ID:" data-te="UPI ID:">UPI ID:</strong> <span class="upi-id">laxminarsimhaswamyrisrisri@sbi</span></p>
+            <p class="qr-card__row"><strong data-en="Payee:" data-te="చెల్లింపు పేరు:">Payee:</strong> Sri Sri Sri Laxmi Narsimha Swamy Devalaya Com</p>
 
             <p class="qr-card__note"
-               data-en="The scannable QR is displayed at the temple."
-               data-te="స్కాన్ చేయదగిన QR ఆలయంలో ప్రదర్శించబడుతుంది.">The scannable QR is displayed at the temple.</p>
+               data-en="Scan with any UPI app (PhonePe, Google Pay, Paytm, BHIM). Check the payee name shown before you pay."
+               data-te="ఏ UPI యాప్‌తోనైనా (ఫోన్‌పే, గూగుల్ పే, పేటీఎం, భీమ్) స్కాన్ చేయండి. చెల్లించే ముందు కనిపించే చెల్లింపు పేరును సరిచూసుకోండి.">Scan with any UPI app (PhonePe, Google Pay, Paytm, BHIM). Check the payee name shown before you pay.</p>
           </div>
 
           <!-- ----- Bank transfer details (shasanam slab — the site's one table style) ----- -->
@@ -383,16 +363,15 @@
                 <img src="assets/diya.svg" alt="" width="14" height="14">
                 <span data-en="Bank Details" data-te="బ్యాంకు వివరాలు">Bank Details</span>
               </p>
-              <!-- Bank details as published in the temple's 2026 Brahmotsavam invitation.
-                   The exact registered ACCOUNT NAME was not printed there, so it is left for the
-                   committee to confirm; the trust note below asks donors to verify the payee name
-                   their app shows. Do not alter the account number/IFSC without the committee. -->
+              <!-- Bank details from the temple's 2026 Brahmotsavam invitation. The account name
+                   is the payee name shown by UPI apps for laxminarsimhaswamyrisrisri@sbi (confirmed
+                   via a successful payment). Do not alter the name/number/IFSC without the committee. -->
               <table class="slab-table">
                 <tbody>
                   <tr>
                     <th scope="row">Account name <span class="te" lang="te">ఖాతా పేరు</span></th>
                     <td class="slab-table__leader" aria-hidden="true"></td>
-                    <td class="slab-table__time"><span class="placeholder">Confirm with the temple committee</span></td>
+                    <td class="slab-table__time">Sri Sri Sri Laxmi Narsimha Swamy Devalaya Com</td>
                   </tr>
                   <tr>
                     <th scope="row">Bank <span class="te" lang="te">బ్యాంకు</span></th>

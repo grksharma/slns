@@ -722,6 +722,12 @@ strong { font-weight: 700; }
   background: rgba(227, 195, 99, .12);
   color: var(--gold-pale);
 }
+/* Hero CTAs sit on top of the gopuram photograph. Lift them off it with a
+   shadow so the gold Donate button never blends into the gold/tan stone
+   behind it, and give the ghost button a faint dark backing so its text
+   stays legible over any part of the photo. */
+.hero .btn { box-shadow: 0 6px 22px rgba(20, 6, 10, .5); }
+.hero .btn--ghost { background: rgba(43, 10, 15, .32); }
 
 .btn--call {
   background: var(--maroon);
